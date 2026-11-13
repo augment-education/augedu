@@ -134,7 +134,66 @@ a:hover{color:#FFFFFF}
 @media (prefers-reduced-motion:reduce){.s-page *{animation:none!important}}
 @property --accent{syntax:'<color>';inherits:true;initial-value:#f97316}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+#weave{--bg:#F3F6FF;--surface:#ffffff;--fg:#0A1A3F;--muted:#55618a;--line:#d0d8f0;--band1:rgba(47,107,255,.07);--band2:rgba(255,107,94,.09);--c1:#2F6BFF;--c2:#E24E3D;--c3:#0f9870;--c4:#7a55f0;--gold:#d99a00;--on:#ffffff;
+ --display:Poppins,"Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){#weave:not([data-theme="light"]){--bg:#0A1A3F;--surface:#14275c;--fg:#ffffff;--muted:#b4c0e6;--line:#2f4690;--band1:rgba(53,208,255,.08);--band2:rgba(255,107,94,.1);--c1:#6b97ff;--c2:#FF7B6E;--c3:#2FD3A0;--c4:#ab90ff;--gold:#FFC83D;--on:#0A1A3F;color-scheme:dark}}
+#weave[data-theme="dark"]{--bg:#0A1A3F;--surface:#14275c;--fg:#ffffff;--muted:#b4c0e6;--line:#2f4690;--band1:rgba(53,208,255,.08);--band2:rgba(255,107,94,.1);--c1:#6b97ff;--c2:#FF7B6E;--c3:#2FD3A0;--c4:#ab90ff;--gold:#FFC83D;--on:#0A1A3F;color-scheme:dark}
+#weave{background:var(--bg);color:var(--fg);font-family:var(--display);font-weight:500;font-size:16px;line-height:1.45}
+#weave .wrap{max-width:1280px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+#weave .wv-h{margin:0;font-size:clamp(1.7rem,4.4vw,2.8rem);font-weight:700;letter-spacing:-1px;line-height:1.1;text-wrap:balance}
+#weave .wv-h em{font-style:normal;color:var(--c1)}
+#weave .lede{margin:0;color:var(--muted);max-width:65ch}
+#weave .tabs{display:flex;flex-wrap:wrap;gap:10px}
+#weave .tabs button,#weave .replay{font:inherit;font-weight:700;color:var(--fg);background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:10px 18px;cursor:pointer;display:flex;align-items:center;gap:10px}
+#weave .tabs button i{width:14px;height:14px;border-radius:50%;background:var(--k)}
+#weave .tabs button[aria-pressed="true"]{border-color:var(--k);background:var(--k);color:var(--on)}
+#weave .tabs button[aria-pressed="true"] i{background:var(--on)}
+#weave button:focus-visible,#weave .node:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+#weave .replay{margin-left:auto;font-weight:500}
+#weave .mapbox{overflow-x:auto;background:var(--surface);border:2px solid var(--line);border-radius:24px}
+#weave svg{display:block;width:100%;min-width:900px;height:auto}
+#weave svg text{font-family:var(--display);fill:var(--fg)}
+#weave .band{font-size:19px;font-weight:700;letter-spacing:2.5px}
+#weave .lbl{font-size:21px;font-weight:500;text-anchor:middle;fill:var(--muted);paint-order:stroke;stroke:var(--surface);stroke-width:7px;stroke-linejoin:round}
+#weave .node{cursor:pointer;outline:none}
+#weave .node circle{fill:var(--surface);stroke:var(--line);stroke-width:4;transition:fill .3s,stroke .3s}
+#weave .node .g{font-size:19px;font-weight:700;text-anchor:middle;fill:var(--on);opacity:0;transition:opacity .3s}
+#weave .node .dot{fill:var(--line);stroke:none;transition:opacity .3s}
+#weave .node.on circle.c{fill:var(--k);stroke:var(--k)}
+#weave .node.on .g{opacity:1}
+#weave .node.on .dot{opacity:0}
+#weave .node.on .lbl{fill:var(--fg);font-weight:700}
+#weave .node.pick circle.c{stroke:var(--gold);stroke-width:7}
+#weave .ghost{fill:none;stroke-width:5;opacity:.16;stroke-linecap:round}
+#weave .thread{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+#weave .tick{font-size:18px;text-anchor:middle;fill:var(--muted)}
+#weave .end circle{fill:var(--gold)}
+#weave .end text{font-weight:700;font-size:21px;text-anchor:middle}
+#weave .detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:18px;align-items:start}
+@media (max-width:760px){#weave .detail{grid-template-columns:minmax(0,1fr)}
+#weave .replay{margin-left:0}}
+#weave .who h2{margin:0 0 6px;font-size:1.5rem;font-weight:700;letter-spacing:-.5px;color:var(--k)}
+#weave .who p{margin:0 0 10px;color:var(--muted)}
+#weave .who .cap{color:var(--fg)}
+#weave .who .cap b{color:var(--gold)}
+#weave .note{font-size:.85rem;color:var(--muted)}
+#weave ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+#weave ol li{min-width:0;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:12px 14px}
+#weave ol li.pick{border-color:var(--gold)}
+#weave ol li span{display:block;font-size:.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--k)}
+#weave ol li b{display:block;font-weight:700}
+#weave ol li q{display:block;font-size:.92rem;color:var(--muted);quotes:none;margin:2px 0}
+#weave ol li small{display:block;font-size:.88rem}
+#weave .empty{color:var(--muted);margin:0}
+@media (prefers-reduced-motion:reduce){#weave .node circle,#weave .node .g{transition:none}}
+#weave{background:transparent;padding-top:0}
+#weave .wrap{padding-top:8px}
+#weave .wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}
+@media (max-width:640px){#weave .wrap{padding-left:20px;padding-right:20px}}
+a.s-chip{color:#F4F6FF;text-decoration:none}
+a.s-chip:hover{color:#FFFFFF}
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
 </head>
 <body>
 <main class="view" id="view-home"><div class="s-pagex s-page" style="--accent:#5EE6FF">
@@ -151,6 +210,7 @@ Augment Education
 </a>
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px">
 <a class="s-navlink" href="#home-how">How it works</a>
+<a class="s-navlink" href="pathways.html">Pathways</a>
 <a class="s-navlink" href="#home-curriculum">Curriculum</a>
 <a class="s-navlink" href="#home-programs">Programs</a>
 <a class="s-navlink" href="#home-why">Why it works</a>
@@ -249,6 +309,14 @@ Augment Education
 </div>
 </div>
 
+<!-- PATHWAY WEAVE --><div id="home-pathways" style="position:relative;z-index:1;padding-top:0"><div id="weave" data-theme="dark"><div class="wrap">
+  <h2 class="wv-h">Shared anchors, <em>divergent paths.</em></h2>
+  <p class="lede">Every student starts with the same question in kindergarten. From there, each one weaves their own thread through the subjects, and no two portfolios look alike by graduation. Pick a journey, or weave your own by choosing subjects on the map.</p>
+  <div class="tabs" id="tabs" role="group" aria-label="Choose a journey"></div>
+  <div class="mapbox"><svg id="map" viewBox="0 0 1700 910" role="img" aria-label="Map of 16 technology subjects from kindergarten to grade 12 with student journeys woven through them"></svg></div>
+  <div class="detail"><div class="who" id="who"></div><div id="stops"></div></div>
+</div></div></div>
+<div class="s-wrap" style="padding-top:0;padding-bottom:88px;text-align:center"><a class="s-btn s-btn-ghost" href="pathways.html">Open the full-width Pathways page</a></div>
 <!-- PROGRAMS -->
 <div id="home-programs" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 100px">
 <div style="color:#FFB547;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px">Three core programs</div>
@@ -305,5 +373,68 @@ Augment Education
 </div>
 
 </div></main>
+<script>
+(function(){
+const NS='http://www.w3.org/2000/svg';
+const N={hist:[230,430,'History of|Technology'],cit:[360,230,'Digital|Citizenship'],comm:[400,640,'Communications'],hw:[520,400,'Hardware &|Software'],art:[610,170,'Digital Art|& Design'],elec:[660,620,'Electricity|& Energy'],code:[760,300,'Coding &|Programming'],space:[840,520,'Space, Robots|& Machines'],
+ web:[960,160,'Digital Design|& Web 3.0'],eng:[1000,680,'Computer|Engineering'],phil:[1060,400,'Philosophy &|Ethics in Tech'],xr:[1150,230,'VR, AR & Spatial|Computing'],data:[1180,560,'Data, IT &|Blockchain'],print:[1270,740,'3D Printing &|Construction'],ai:[1300,390,'Artificial|Intelligence'],med:[1410,590,'Food &|Medical Tech']};
+const START=[70,430],END=[1600,430];
+const grade=id=>Math.round((N[id][0]-150)/108), gl=g=>g?('Grade '+g):'Kindergarten', name=id=>N[id][2].replace('|',' ');
+const J={
+ builder:{k:'--c1',t:'The Builder',d:'Loves taking things apart to see how they work.',cap:'A robotic hand: designed, 3D printed, coded and documented.',s:[
+  ['hist','What was the first machine?','Paper timeline, photographed'],['hw','What is inside a computer?','Labeled teardown slides'],['elec','How does a battery push electricity?','Circuit demo video'],['code','How do I tell a machine what to do?','First playable game'],['space','How do robots sense the world?','Rover design document'],['eng','How does a chip compute?','Logic gate build log'],['print','Can we print a house?','3D printed scale model'],['ai','Can a robot learn to grip?','Trained model and demo']]},
+ artist:{k:'--c2',t:'The Artist',d:'Sees every screen as a canvas and every tool as a brush.',cap:'An augmented reality gallery of original work, open to the public.',s:[
+  ['hist','How did people share stories before screens?','Drawn timeline, photographed'],['comm','How does a message travel?','Paper comic strip, photographed'],['art','What makes a design feel right?','Poster series'],['code','Can code draw?','Generative art sketch'],['web','Who owns digital art?','Personal portfolio website'],['xr','Can you walk inside a painting?','AR gallery prototype'],['ai','Can a machine be creative?','Video essay']]},
+ thinker:{k:'--c3',t:'The Thinker',d:'Always asks whether we should, and who it affects.',cap:'A policy brief on AI in medicine, defended in a live presentation.',s:[
+  ['hist','Is a wheel technology?','Worksheet, photographed'],['cit','What should I share online?','Class pledge poster'],['space','Should robots explore for us?','Debate slides'],['phil','Who decides what is fair?','Argument essay'],['data','What does my data say about me?','Data story'],['ai','Which jobs will change?','Research presentation'],['med','Should AI help doctors decide?','Policy brief']]},
+ own:{k:'--c4',t:'Weave your own',d:'Choose subjects on the map to add or remove them. The thread follows your choices from kindergarten to graduation.',own:true,s:[]}};
+let sel='builder',pick=null,own=['hist','code','ai'],raf=0;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const el=(t,a={},p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const svg=document.getElementById('map');
+// static layer
+el('rect',{x:170,y:60,width:740,height:750,rx:44,fill:'var(--band1)'},svg);el('rect',{x:795,y:60,width:690,height:750,rx:44,fill:'var(--band2)'},svg);
+let t=el('text',{x:205,y:102,class:'band'},svg);t.textContent='INTRO TO TECHNOLOGY · K–8';t.style.fill='var(--c1)';
+t=el('text',{x:1450,y:102,class:'band','text-anchor':'end'},svg);t.textContent='ADVANCED TECHNOLOGY · 6–12';t.style.fill='var(--c2)';
+el('line',{x1:150,y1:850,x2:1446,y2:850,stroke:'var(--line)','stroke-width':3},svg);
+for(let g=0;g<=12;g++){const x=150+g*108;el('circle',{cx:x,cy:850,r:5,fill:'var(--muted)'},svg);const tx=el('text',{x,y:888,class:'tick'},svg);tx.textContent=g?g:'K'}
+const ghosts=el('g',{},svg),thread=el('path',{class:'thread'},svg),nodes=el('g',{},svg);
+const mover=el('circle',{r:13,fill:'var(--gold)',stroke:'var(--surface)','stroke-width':4,opacity:0},svg);
+// start and end
+let g0=el('g',{class:'end'},svg);el('circle',{cx:START[0],cy:START[1],r:30},g0);t=el('text',{x:START[0],y:START[1]+7},g0);t.textContent='K';t.style.fill='#0A1A3F';
+t=el('text',{x:START[0]+6,y:START[1]+62,class:'lbl'},g0);t.textContent='What is';t=el('text',{x:START[0]+6,y:START[1]+86,class:'lbl'},g0);t.textContent='technology?';
+g0=el('g',{class:'end'},svg);el('circle',{cx:END[0],cy:END[1],r:40},g0);el('path',{d:`M${END[0]-22} ${END[1]-4} ${END[0]} ${END[1]-16} ${END[0]+22} ${END[1]-4} ${END[0]} ${END[1]+8}Z M${END[0]-12} ${END[1]+6}v10q12 8 24 0v-10`,fill:'none',stroke:'#0A1A3F','stroke-width':4,'stroke-linejoin':'round'},g0);
+t=el('text',{x:END[0],y:END[1]+72,class:'lbl'},g0);t.textContent='Graduation';t=el('text',{x:END[0],y:END[1]+96,class:'lbl'},g0);t.textContent='portfolio';
+const nodeEl={};
+for(const id in N){const [x,y,l]=N[id];const g=el('g',{class:'node',tabindex:0,role:'button','aria-label':name(id)},nodes);nodeEl[id]=g;
+  el('circle',{class:'c',cx:x,cy:y,r:28},g);el('circle',{class:'dot',cx:x,cy:y,r:7},g);const gt=el('text',{class:'g',x,y:y+7},g);gt.textContent=grade(id)||'K';
+  l.split('|').forEach((s,i)=>{const tx=el('text',{class:'lbl',x,y:y+56+i*24},g);tx.textContent=s});
+  const act=()=>tap(id);g.addEventListener('click',act);g.addEventListener('keydown',e=>{if(e.key=='Enter'||e.key==' '){e.preventDefault();act()}})}
+const ids=k=>(k=='own'?own:J[k].s.map(s=>s[0])).slice().sort((a,b)=>N[a][0]-N[b][0]);
+function pathD(list){const pts=[START,...list.map(i=>N[i]),END];let d=`M${pts[0][0]} ${pts[0][1]}`;for(let i=1;i<pts.length;i++){const [x0,y0]=pts[i-1],[x1,y1]=pts[i],m=(x0+x1)/2;d+=` C${m} ${y0} ${m} ${y1} ${x1} ${y1}`}return d}
+function tap(id){if(sel=='own'){own=own.includes(id)?own.filter(x=>x!=id):[...own,id];pick=null;draw(false)}else if(ids(sel).includes(id)){pick=pick==id?null:id;mark();panel()}}
+function mark(){const on=ids(sel);for(const id in nodeEl){nodeEl[id].classList.toggle('on',on.includes(id));nodeEl[id].classList.toggle('pick',pick==id);nodeEl[id].style.setProperty('--k',`var(${J[sel].k})`)}}
+function panel(){const j=J[sel],who=document.getElementById('who'),st=document.getElementById('stops');who.style.setProperty('--k',`var(${j.k})`);st.style.setProperty('--k',`var(${j.k})`);
+  who.innerHTML=`<h2>${j.t}</h2><p>${j.d}</p>`+(j.own?'':`<p class="cap"><b>Grade 12 capstone:</b> ${j.cap}</p><p class="note">Example journey for illustration. Questions and portfolio pieces are samples, and every student's thread is different.</p>`);
+  const list=ids(sel);if(!list.length){st.innerHTML='<p class="empty">No subjects chosen yet. Choose any bubble on the map to start a thread.</p>';return}
+  st.innerHTML='<ol>'+list.map(id=>{const s=j.own?null:j.s.find(s=>s[0]==id);return `<li class="${pick==id?'pick':''}"><span>${gl(grade(id))}</span><b>${name(id)}</b>${s?`<q>${s[1]}</q><small>Portfolio: ${s[2]}</small>`:''}</li>`}).join('')+'</ol>'}
+function draw(animate=true){cancelAnimationFrame(raf);ghosts.innerHTML='';
+  for(const k of ['builder','artist','thinker'])if(k!=sel)el('path',{class:'ghost',d:pathD(ids(k)),stroke:`var(${J[k].k})`},ghosts);
+  const list=ids(sel);thread.setAttribute('d',pathD(list));thread.setAttribute('stroke',`var(${J[sel].k})`);
+  document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k==sel));
+  panel();const L=thread.getTotalLength();
+  if(!animate||reduce){thread.style.strokeDasharray='none';mover.setAttribute('opacity',0);mark();return}
+  for(const id in nodeEl)nodeEl[id].classList.remove('on','pick');
+  thread.style.strokeDasharray=L;const t0=performance.now(),dur=4200;
+  (function step(now){const p=Math.min(1,(now-t0)/dur),e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2,pt=thread.getPointAtLength(L*e);
+    thread.style.strokeDashoffset=L*(1-e);mover.setAttribute('cx',pt.x);mover.setAttribute('cy',pt.y);mover.setAttribute('opacity',p<1?1:0);
+    list.forEach(id=>{if(pt.x>=N[id][0]-4){nodeEl[id].classList.add('on');nodeEl[id].style.setProperty('--k',`var(${J[sel].k})`)}});
+    if(p<1)raf=requestAnimationFrame(step);else{thread.style.strokeDasharray='none';mark()}})(t0)}
+const tabs=document.getElementById('tabs');
+for(const k in J){const b=document.createElement('button');b.id='tab-'+k;b.dataset.k=k;b.style.setProperty('--k',`var(${J[k].k})`);b.innerHTML=`<i></i>${J[k].t}`;b.onclick=()=>{sel=k;pick=null;draw(true)};tabs.appendChild(b)}
+const rp=document.createElement('button');rp.id='replay';rp.className='replay';rp.textContent='Replay';rp.onclick=()=>draw(true);tabs.appendChild(rp);
+draw(false);if(!reduce){if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{if(es[0].isIntersecting){io.disconnect();draw(true)}},{threshold:.5});io.observe(document.getElementById('map'))}else{setTimeout(()=>draw(true),400)}}
+})();
+</script>
 </body>
 </html>
