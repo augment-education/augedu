@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artificial Intelligence | Augment Education</title>
+<meta name="description" content="Students go beyond using AI to understanding it. They explore how machines learn from examples, how neural networks and language models work, and what it…">
+<meta name="theme-color" content="#070B1A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Augment Education">
+<meta property="og:title" content="Artificial Intelligence | Augment Education">
+<meta property="og:description" content="Students go beyond using AI to understanding it. They explore how machines learn from examples, how neural networks and language models work, and what it…">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%235EE6FF' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%235EE6FF'/%3E%3Ccircle cx='23' cy='5' r='3' fill='%23FFB547'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070B1A;--fg:#F4F6FF;--muted:#A9B3D6;--cyan:#5EE6FF;--violet:#9B8CFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070B1A;--fg:#F4F6FF}}
+:root[data-theme="dark"]{--bg:#070B1A;--fg:#F4F6FF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg)}
+.view[hidden]{display:none}
+.s-page{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--fg);position:relative;overflow-x:clip}
+.s-page *{box-sizing:border-box}
+.s-pagex{font-family:'Inter',system-ui,sans-serif}
+.s-wrap{max-width:1280px;margin:0 auto;padding-left:32px;padding-right:32px;position:relative;z-index:1}
+.s-top{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.s-brand{display:flex;align-items:center;gap:12px;color:#F4F6FF;text-decoration:none;font-size:22px}
+.s-brand:hover{color:#fff}
+.s-logo{position:relative;display:inline-block;width:34px;height:34px;border:2px solid var(--accent);border-radius:50%}
+.s-lp1{position:absolute;width:9px;height:9px;border-radius:50%;background:#FFB547;top:-5px;left:12px}
+.s-lp2{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:10px;top:10px}
+.s-navr{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.s-hero{padding-top:48px;padding-bottom:72px;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+.s-crumb{color:var(--muted);font-size:15px}
+.s-crumb a{color:var(--accent);text-decoration:none;font-weight:600}
+.s-h1{margin:20px 0 0;font-size:76px;line-height:1.04}
+.s-h2{margin:14px 0 0;font-size:48px;line-height:1.1;max-width:820px}
+.s-lead{margin:22px 0 0;font-size:24px;line-height:1.45;color:var(--muted);max-width:560px}
+.s-eye{color:var(--cyan);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.s-sec{padding-top:48px;padding-bottom:48px}
+.s-p{margin:0 0 16px;font-size:18px;line-height:1.7;color:var(--muted)}
+.s-two{margin-top:32px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.s-two>div:first-child{flex:1 1 440px;min-width:0}
+.s-chips{flex:1 1 380px;min-width:0;display:flex;flex-wrap:wrap;gap:12px}
+.s-soon{padding:48px;text-align:left}
+.s-grid4{margin-top:32px;display:flex;flex-wrap:wrap;gap:20px}
+.s-mini{flex:1 1 230px;padding:28px}
+.s-mini p{margin:8px 0 0;color:var(--muted);font-size:16px;line-height:1.5}
+.s-num{font-size:44px;color:var(--accent)}
+.s-cta{border-radius:36px;padding:64px 40px;text-align:center;background:linear-gradient(120deg,#2A2F8F,#6A3FD0 50%,#C23FA0);border:1px solid rgba(255,255,255,.2)}
+.s-pn{flex:1 1 280px;display:flex;flex-direction:column;gap:6px;padding:22px 26px;border:1px solid rgba(255,255,255,.12);border-radius:20px;color:#F4F6FF;text-decoration:none;font-size:22px;transition:border-color .25s,transform .25s}
+.s-pn:hover{border-color:var(--accent);transform:translateY(-4px);color:#fff}
+.s-pl{font-family:'Inter',system-ui,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.s-foot{border-top:1px solid rgba(255,255,255,.1);padding:32px 0;position:relative;z-index:1}
+.s-footin{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;color:var(--muted);font-size:15px}
+.s-flinks{display:flex;flex-wrap:wrap;gap:8px 24px}
+.s-orb{position:relative;width:420px;max-width:100%;height:420px;transform:scale(.9)}
+.s-orb .s-o1{width:400px;height:400px;margin:-200px 0 0 -200px}
+.s-orb .s-o2{width:290px;height:290px;margin:-145px 0 0 -145px}
+.s-orb .s-o3{width:180px;height:180px;margin:-90px 0 0 -90px}
+.s-orb .s-core{width:90px;height:90px;margin:-45px 0 0 -45px}
+a{color:#5EE6FF}
+a:hover{color:#FFFFFF}
+.s-lever{position:relative;width:380px;max-width:100%;height:240px}
+.s-beam{position:absolute;left:0;right:0;top:128px;height:14px;border-radius:7px;background:linear-gradient(90deg,#FFB547,#FF7AC8);transform-origin:68% 50%;animation:s_tilt 4s ease-in-out infinite alternate}
+.s-load{position:absolute;right:6px;top:-58px;width:56px;height:56px;border-radius:14px;background:linear-gradient(160deg,#9B8CFF,#5B4BD6);box-shadow:0 0 30px rgba(155,140,255,.6)}
+.s-effort{position:absolute;left:6px;top:-26px;width:24px;height:24px;border-radius:50%;background:#5EE6FF;box-shadow:0 0 20px #5EE6FF}
+.s-fulcrum{position:absolute;left:68%;margin-left:-26px;top:140px;width:0;height:0;border-left:26px solid transparent;border-right:26px solid transparent;border-bottom:60px solid #A9B3D6}
+.s-base{position:absolute;left:0;right:0;top:200px;height:6px;border-radius:3px;background:rgba(255,255,255,.18)}
+@keyframes s_tilt{from{transform:rotate(-13deg)}to{transform:rotate(11deg)}}
+.s-promo{display:flex;flex-wrap:wrap;gap:32px;align-items:center;padding:48px;background:linear-gradient(120deg,#2B2210,#0B1128 60%)}
+.s-flow{margin-top:40px;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:14px}
+.s-fnode{flex:1 1 220px;padding:26px;min-width:0}
+.s-fnode h3{margin:8px 0 0;font-size:24px}
+.s-fnode p{margin:10px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+.s-fl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.s-fout{background:linear-gradient(160deg,#4A1E45,#0B1128);border-color:rgba(255,122,200,.6)}
+.s-op{align-self:center;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;color:var(--muted);padding:0 2px}
+.s-leadbox{background:linear-gradient(120deg,#5A3A10,#6A3FD0 55%,#C23FA0)}
+.s-form{margin:30px auto 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:680px}
+.s-form input{flex:1 1 280px;min-height:52px;border-radius:999px;border:2px solid rgba(255,255,255,.35);background:rgba(7,11,26,.55);color:#fff;font-size:17px;padding:0 22px;font-family:inherit}
+.s-form input::placeholder{color:#C9CFEA}
+.s-form input:focus{outline:3px solid #fff;outline-offset:2px}
+.s-form .s-btn{min-height:52px}
+.s-msg{margin:16px 0 0;min-height:24px;font-size:16px;color:#FFE7B8}
+.s-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:760px){.s-op{width:100%;text-align:center;font-size:32px}}
+@media (prefers-reduced-motion:reduce){.s-beam{animation:none!important}}
+@media (max-width:640px){.s-h1{font-size:48px}.s-h2{font-size:34px}.s-wrap{padding-left:20px;padding-right:20px}}
+.s-pagex{font-family:'Inter',system-ui,sans-serif;background:#070B1A;color:#F4F6FF;overflow:hidden;position:relative}
+.s-page *{box-sizing:border-box}
+.s-hd{font-family:'Space Grotesk','Inter',system-ui,sans-serif;font-weight:700;letter-spacing:-0.02em}
+.s-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+.s-btn:hover{transform:translateY(-3px)}
+.s-btn-main{background:linear-gradient(90deg,var(--accent),#9B8CFF);color:#070B1A}
+.s-btn-main:hover{color:#070B1A;box-shadow:0 12px 40px rgba(94,230,255,.45)}
+.s-btn-ghost{border:1px solid rgba(255,255,255,.28);color:#F4F6FF}
+.s-btn-ghost:hover{border-color:var(--accent);color:#F4F6FF;box-shadow:0 0 0 4px rgba(94,230,255,.15)}
+.s-navlink{color:#A9B3D6;text-decoration:none;font-size:15px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+.s-navlink:hover{color:#FFFFFF}
+.s-grad{background:linear-gradient(90deg,#5EE6FF,#9B8CFF,#FF7AC8,#FFB547,#5EE6FF);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shift 8s linear infinite}
+.s-card{background:linear-gradient(160deg,#111A3A,#0B1128);border:1px solid rgba(255,255,255,.1);border-radius:24px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.s-card:hover{transform:translateY(-8px);border-color:rgba(94,230,255,.6);box-shadow:0 24px 60px rgba(94,230,255,.14)}
+.s-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font-size:15px;font-weight:500;transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.s-chip:hover{background:rgba(94,230,255,.14);border-color:var(--accent);transform:scale(1.06)}
+.s-chip2:hover{background:rgba(255,122,200,.16);border-color:#FF7AC8}
+.s-orbit{position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%;left:50%;top:50%}
+.s-o1{width:520px;height:520px;margin:-260px 0 0 -260px;animation:spin 46s linear infinite}
+.s-o2{width:380px;height:380px;margin:-190px 0 0 -190px;animation:spin 30s linear infinite reverse}
+.s-o3{width:240px;height:240px;margin:-120px 0 0 -120px;animation:spin 18s linear infinite}
+.s-dot{position:absolute;border-radius:50%}
+.s-core{position:absolute;left:50%;top:50%;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFFFFF,#5EE6FF 35%,#6A5CFF 75%,#1B1F5E);box-shadow:0 0 80px rgba(94,230,255,.7),0 0 160px rgba(155,140,255,.5);animation:pulse 4s ease-in-out infinite}
+.s-mq{display:flex;width:max-content;animation:marq 38s linear infinite}
+.s-mq span{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:28px;padding:0 30px;color:#A9B3D6;white-space:nowrap}
+.s-mq i{font-style:normal;color:#5EE6FF}
+.s-glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+.s-stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 120px 90px,#cfe,transparent),radial-gradient(1.5px 1.5px at 210px 160px,#fff,transparent),radial-gradient(1px 1px at 300px 40px,#ddf,transparent);background-size:340px 220px;opacity:.55;animation:twinkle 6s ease-in-out infinite alternate;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+@keyframes shift{to{background-position:300% 0}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(60px,40px)}}
+@keyframes twinkle{from{opacity:.25}to{opacity:.7}}
+@keyframes rise{from{opacity:0;transform:translateY(56px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes slidel{from{opacity:0;transform:translateX(-80px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@supports (animation-timeline:view()){
+.s-rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+.s-rl{animation:slidel linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+.s-bar{transform-origin:left;animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
+}
+@media (prefers-reduced-motion:reduce){.s-page *{animation:none!important}}
+@property --accent{syntax:'<color>';inherits:true;initial-value:#f97316}
+#anim-8{--bg:#f4f1ea;--fg:#1b2333;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){#anim-8:not([data-theme="light"]){--bg:#0a0f1a;--fg:#e9edf5}}
+#anim-8[data-theme="dark"]{--bg:#0a0f1a;--fg:#e9edf5}
+#anim-8{scroll-padding-top:env(safe-area-inset-top,0px)}
+#anim-8 *{box-sizing:border-box}
+#anim-8 .track{position:relative}
+#anim-8 .stick{position:sticky;top:0;min-height:100vh;display:flex;align-items:center;justify-content:center}
+#anim-8 .stick>.card{width:100%}
+#anim-8 .hint{text-align:center;font-size:12px;letter-spacing:.08em;margin-top:12px;opacity:.7;transition:opacity .5s;animation:k8_nudge 1.6s ease-in-out infinite alternate}
+@keyframes k8_nudge{to{transform:translateY(4px)}}
+@media(max-width:560px){#anim-8 .dot{font-size:10px}}
+#anim-8{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:20px 14px}
+#anim-8 .card{--accent:#f97316;max-width:880px;margin:0 auto;background:#0b1020;color:#e9edf5;border-radius:20px;position:relative;overflow:hidden;transition:--accent 1.2s}
+#anim-8 .glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 55%,var(--accent),transparent 62%);opacity:.3}
+#anim-8 .in{position:relative;padding:18px 18px 16px}
+#anim-8 .a-eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px;opacity:.7;font-weight:600}
+#anim-8 svg{width:100%;height:auto;display:block}
+#anim-8 .scene{opacity:0;transition:opacity .8s}
+#anim-8 .scene.on{opacity:1}
+#anim-8 .cap{text-align:center;min-height:96px;padding:0 6px}
+#anim-8 .cap.go{animation:k8_rise .7s ease both}
+@keyframes k8_rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#anim-8 .era{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+#anim-8 .cap h2{margin:4px 0 6px;font-size:clamp(22px,4.5vw,32px)}
+#anim-8 .cap p{margin:0 auto;max-width:520px;font-size:15px;line-height:1.5;opacity:.85}
+#anim-8 .tl{position:relative;display:flex;justify-content:space-between;margin:16px 6px 0}
+#anim-8 .tl::before,#anim-8 .bar{content:"";position:absolute;top:9px;left:7.1%;height:3px;border-radius:2px}
+#anim-8 .tl::before{right:7.1%;background:#ffffff22}
+#anim-8 .bar{background:var(--accent);transition:width .8s;width:0}
+#anim-8 .dot{all:unset;position:relative;z-index:1;flex:1;text-align:center;cursor:pointer;font-size:12px;opacity:.6}
+#anim-8 .dot i{display:block;width:21px;height:21px;margin:0 auto 6px;border-radius:50%;background:#0b1020;border:3px solid #ffffff44;transition:.4s}
+#anim-8 .dot.on{opacity:1}
+#anim-8 .dot.on i,#anim-8 .dot.done i{border-color:var(--accent);background:var(--accent)}
+#anim-8 .dot:focus-visible i{outline:2px solid #fff;outline-offset:2px}
+#anim-8 .spin{animation:k8_spin 12s linear infinite;transform-box:fill-box;transform-origin:center}
+#anim-8 .rev{animation-direction:reverse}
+#anim-8 .orb{animation:k8_spin 9s linear infinite;transform-origin:0 0}
+@keyframes k8_spin{to{transform:rotate(360deg)}}
+#anim-8 .flame{transform-box:fill-box;transform-origin:50% 100%;animation:k8_fl .45s ease-in-out infinite alternate}
+#anim-8 .f2{animation-duration:.33s}
+@keyframes k8_fl{from{transform:scale(.94,.9) skewX(-3deg)}to{transform:scale(1.04,1.08) skewX(3deg)}}
+#anim-8 .sp{animation:k8_up 2.4s ease-out infinite;opacity:0}
+@keyframes k8_up{0%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--dx),-120px)}}
+#anim-8 .puff{transform-box:fill-box;transform-origin:center;animation:k8_puff 3s ease-out infinite;opacity:0}
+@keyframes k8_puff{0%{opacity:.8;transform:translate(0,0) scale(.5)}100%{opacity:0;transform:translate(28px,-90px) scale(2.4)}}
+#anim-8 .pis{animation:k8_pis 1.1s ease-in-out infinite alternate}
+@keyframes k8_pis{to{transform:translateX(-30px)}}
+#anim-8 .dash{stroke-dasharray:10 14;animation:k8_dash 1s linear infinite}
+@keyframes k8_dash{to{stroke-dashoffset:-48}}
+#anim-8 .halo{transform-box:fill-box;transform-origin:center;animation:k8_halo 1.6s ease-in-out infinite alternate}
+@keyframes k8_halo{from{opacity:.35;transform:scale(.9)}to{opacity:.9;transform:scale(1.15)}}
+#anim-8 .bolt{animation:k8_bolt 2.2s steps(1) infinite}
+@keyframes k8_bolt{0%,55%,65%,100%{opacity:.25}58%,62%,80%{opacity:1}}
+#anim-8 .pulse{animation:k8_halo 1.2s ease-in-out infinite alternate}
+#anim-8 .tw{animation:k8_halo 1.8s ease-in-out infinite alternate}
+#anim-8 .plat{animation:k8_plat 1.4s ease-in infinite alternate}
+@keyframes k8_plat{to{transform:translateY(108px)}}
+#anim-8 .hand{transform-box:fill-box;transform-origin:center;animation:k8_hand 1.4s ease-in infinite alternate}
+@keyframes k8_hand{to{transform:scaleX(.25)}}
+#anim-8 .pg{transform-box:fill-box;transform-origin:center;animation:k8_pg 2.4s ease-out infinite;opacity:0}
+@keyframes k8_pg{0%{opacity:0;transform:translate(0,20px)}20%{opacity:1}100%{opacity:0;transform:translate(110px,-30px) rotate(12deg)}}
+#anim-8 .fit{transform-box:fill-box;transform-origin:center;animation:k8_fit 4s ease-in-out infinite alternate}
+@keyframes k8_fit{from{transform:rotate(-35deg)}to{transform:rotate(0)}}
+#anim-8 .ci{animation:k8_ci 3s linear infinite}
+@keyframes k8_ci{0%{transform:translateX(0);opacity:0}15%,85%{opacity:1}100%{transform:translateX(220px);opacity:0}}
+#anim-8 .pop{transform-box:fill-box;transform-origin:center;animation:k8_pop 3.6s ease-in-out infinite}
+@keyframes k8_pop{0%{transform:scale(.6);opacity:0}15%,85%{transform:scale(1);opacity:1}100%{transform:scale(.6);opacity:0}}
+#anim-8 .fd{animation:k8_fd 3.6s ease-in-out infinite}
+@keyframes k8_fd{0%,20%{opacity:0}40%,85%{opacity:1}100%{opacity:0}}
+#anim-8 .gw{transform-box:fill-box;transform-origin:left center;animation:k8_gw 3.6s ease-out infinite alternate}
+@keyframes k8_gw{from{transform:scaleX(.05)}to{transform:scaleX(1)}}
+#anim-8 .bk{animation:k8_bk 1s steps(1) infinite}
+@keyframes k8_bk{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){#anim-8 *{animation:none!important;transition:none!important}}
+#anim-8[data-theme="dark"]{--bg:#070B1A}
+#anim-8{padding:0 14px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<main class="view" id="view-artificial-intelligence"><div class="s-page" style="--accent:#5EE6FF"><div class="s-glow" style="width:560px;height:560px;left:-160px;top:0;background:rgba(106,92,255,.4)"></div><div class="s-glow" style="width:420px;height:420px;right:-100px;top:240px;background:color-mix(in srgb,var(--accent) 35%,transparent)"></div><div class="s-stars"></div><div class="s-wrap s-top">
+<a href="index.html" class="s-hd s-brand"><span class="s-logo"><span class="s-lp1"></span><span class="s-lp2"></span></span>Augment Education</a>
+<div class="s-navr">
+<a class="s-navlink" href="index.html#home-curriculum">Curriculum</a>
+<a class="s-navlink" href="index.html#home-programs">Programs</a>
+<a class="s-navlink" href="first-principles.html">First Principles</a>
+<a class="s-navlink" href="index.html#home-why">Why it works</a>
+<a class="s-btn s-btn-main" href="https://augedu.com/contact" style="min-height:44px">Get in touch</a>
+</div></div><div class="s-wrap s-hero"><div style="flex:1 1 520px;min-width:0"><div class="s-crumb"><a href="index.html#home-curriculum">All subjects</a> / Advanced Technology · 6-12</div><h1 class="s-hd s-h1"><span class="s-grad">Artificial Intelligence</span></h1><p class="s-lead">Understand the tools that learn</p><div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:14px"><a class="s-btn s-btn-main" href="https://augedu.com/artificialintelligence">Explore the full course</a><a class="s-btn s-btn-ghost" href="#journey-artificial-intelligence">Scroll the journey</a></div></div><div style="flex:1 1 320px;min-width:0;display:flex;justify-content:center"><div class="s-orb"><div class="s-orbit s-o1"><div class="s-dot" style="width:20px;height:20px;background:#FFB547;left:50%;top:-10px;margin-left:-10px;box-shadow:0 0 22px #FFB547"></div><div class="s-dot" style="width:11px;height:11px;background:#FF7AC8;left:50%;bottom:-5px;margin-left:-5px"></div></div><div class="s-orbit s-o2"><div class="s-dot" style="width:15px;height:15px;background:#9B8CFF;left:-7px;top:50%;margin-top:-7px;box-shadow:0 0 18px #9B8CFF"></div></div><div class="s-orbit s-o3"><div class="s-dot" style="width:13px;height:13px;background:var(--accent);left:50%;top:-6px;margin-left:-6px;box-shadow:0 0 16px var(--accent)"></div></div><div class="s-core"></div></div></div></div><div id="journey-artificial-intelligence" class="s-wrap s-sec" style="padding-bottom:24px"><div class="s-eye">The journey</div><h2 class="s-hd s-h2">Scroll to travel through Artificial Intelligence.</h2></div><div style="position:relative;z-index:1"><div id="anim-8" data-theme="dark"><div class="track" id="a8-track"><div class="stick">
+<div class="card" id="a8-card">
+ <div class="glow"></div>
+ 
+ <div class="in">
+  <div class="a-eyebrow">AI fundamentals</div>
+  <svg viewBox="0 0 600 300" role="img" aria-label="Animated scenes explaining machine learning, neural networks, tokens, large language models and compute">
+   <!-- 0 MACHINE LEARNING -->
+   <g class="scene on">
+    <circle cx="110" cy="80" r="9" fill="#22d3ee"/><circle cx="160" cy="130" r="9" fill="#22d3ee"/><circle cx="130" cy="190" r="9" fill="#22d3ee"/><circle cx="200" cy="100" r="9" fill="#22d3ee"/><circle cx="215" cy="170" r="9" fill="#22d3ee"/><circle cx="245" cy="70" r="9" fill="#22d3ee"/><circle cx="235" cy="225" r="9" fill="#22d3ee"/><circle cx="170" cy="245" r="9" fill="#22d3ee"/><circle cx="355" cy="90" r="9" fill="#fbbf24"/><circle cx="400" cy="140" r="9" fill="#fbbf24"/><circle cx="470" cy="100" r="9" fill="#fbbf24"/><circle cx="430" cy="200" r="9" fill="#fbbf24"/><circle cx="365" cy="215" r="9" fill="#fbbf24"/><circle cx="505" cy="170" r="9" fill="#fbbf24"/><circle cx="395" cy="250" r="9" fill="#fbbf24"/><circle cx="455" cy="60" r="9" fill="#fbbf24"/>
+    <g class="fit"><path d="M300 30V270" stroke="#e0f2fe" stroke-width="5" stroke-linecap="round"/></g>
+   </g>
+   <!-- 1 DATA -->
+   <g class="scene">
+    <g class="ci"><rect x="70" y="60" width="64" height="48" rx="6" fill="#fef3c7"/><circle cx="90" cy="76" r="7" fill="#f59e0b"/><path d="M78 100L96 84L108 94L116 88L128 100Z" fill="#fb923c"/></g>
+    <g class="ci" style="animation-delay:-1s"><rect x="70" y="130" width="64" height="48" rx="6" fill="#fde68a"/><path d="M80 146H124M80 158H114M80 168H120" stroke="#92400e" stroke-width="4" stroke-linecap="round"/></g>
+    <g class="ci" style="animation-delay:-2s"><rect x="70" y="200" width="64" height="48" rx="6" fill="#fef3c7"/><text x="102" y="231" text-anchor="middle" font-family="monospace" font-size="16" font-weight="700" fill="#92400e">3.14</text></g>
+    <rect x="350" y="96" width="100" height="108" fill="#78350f"/>
+    <ellipse cx="400" cy="204" rx="50" ry="16" fill="#78350f"/>
+    <path d="M350 132A50 16 0 0 0 450 132M350 168A50 16 0 0 0 450 168" fill="none" stroke="#fbbf24" stroke-width="3"/>
+    <ellipse cx="400" cy="96" rx="50" ry="16" fill="#fbbf24"/>
+   </g>
+   <!-- 2 NEURAL NETWORKS -->
+   <g class="scene">
+    <path d="M140 90L300 60M140 90L300 120M140 90L300 180M140 90L300 240M140 150L300 60M140 150L300 120M140 150L300 180M140 150L300 240M140 210L300 60M140 210L300 120M140 210L300 180M140 210L300 240M300 60L460 110M300 60L460 190M300 120L460 110M300 120L460 190M300 180L460 110M300 180L460 190M300 240L460 110M300 240L460 190" stroke="#4c1d95" stroke-width="2" fill="none"/>
+    <path class="dash" d="M140 90L300 60M140 90L300 120M140 90L300 180M140 90L300 240M140 150L300 60M140 150L300 120M140 150L300 180M140 150L300 240M140 210L300 60M140 210L300 120M140 210L300 180M140 210L300 240M300 60L460 110M300 60L460 190M300 120L460 110M300 120L460 190M300 180L460 110M300 180L460 190M300 240L460 110M300 240L460 190" stroke="#a78bfa" stroke-width="3" fill="none"/>
+    <circle cx="140" cy="90" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="140" cy="150" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="140" cy="210" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="300" cy="60" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="300" cy="120" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="300" cy="180" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="300" cy="240" r="14" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="460" cy="110" r="18" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/><circle cx="460" cy="190" r="18" fill="#6d28d9" stroke="#c4b5fd" stroke-width="3"/>
+    <circle class="tw" cx="140" cy="90" r="14" fill="#e9d5ff" style="animation-delay:0.00s"/><circle class="tw" cx="140" cy="150" r="14" fill="#e9d5ff" style="animation-delay:0.25s"/><circle class="tw" cx="140" cy="210" r="14" fill="#e9d5ff" style="animation-delay:0.50s"/><circle class="tw" cx="300" cy="60" r="14" fill="#e9d5ff" style="animation-delay:0.75s"/><circle class="tw" cx="300" cy="120" r="14" fill="#e9d5ff" style="animation-delay:1.00s"/><circle class="tw" cx="300" cy="180" r="14" fill="#e9d5ff" style="animation-delay:1.25s"/><circle class="tw" cx="300" cy="240" r="14" fill="#e9d5ff" style="animation-delay:1.50s"/><circle class="tw" cx="460" cy="110" r="18" fill="#e9d5ff" style="animation-delay:1.75s"/><circle class="tw" cx="460" cy="190" r="18" fill="#e9d5ff" style="animation-delay:2.00s"/>
+   </g>
+   <!-- 3 NLP -->
+   <g class="scene">
+    <path class="dash" d="M230 120C300 120 300 195 370 195" fill="none" stroke="#f472b6" stroke-width="4"/>
+    <rect x="70" y="70" width="160" height="70" rx="20" fill="#f9a8d4"/><path d="M100 136L84 168L134 138Z" fill="#f9a8d4"/>
+    <text x="150" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" font-weight="700" fill="#831843">Hello</text>
+    <rect x="370" y="160" width="160" height="70" rx="20" fill="#c4b5fd"/><path d="M500 226L516 258L466 228Z" fill="#c4b5fd"/>
+    <text x="450" y="206" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" font-weight="700" fill="#4c1d95">Hola</text>
+    <circle class="halo" cx="300" cy="157" r="40" fill="#f472b6"/>
+    <circle cx="300" cy="157" r="28" fill="#831843" stroke="#f472b6" stroke-width="3"/>
+    <text x="300" y="163" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#fce7f3">NLP</text>
+   </g>
+   <!-- 4 TOKENS -->
+   <g class="scene">
+    <g class="pop" style="animation-delay:0.0s"><rect x="159" y="40" width="56" height="50" rx="8" fill="#fb923c"/><text x="187" y="72" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#431407">Un</text></g><text class="fd" x="187" y="116" text-anchor="middle" font-family="monospace" font-size="16" fill="#fdba74" style="animation-delay:0.0s">412</text><g class="pop" style="animation-delay:0.3s"><rect x="227" y="40" width="112" height="50" rx="8" fill="#fb923c"/><text x="283" y="72" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#431407">believ</text></g><text class="fd" x="283" y="116" text-anchor="middle" font-family="monospace" font-size="16" fill="#fdba74" style="animation-delay:0.3s">9087</text><g class="pop" style="animation-delay:0.6s"><rect x="351" y="40" width="90" height="50" rx="8" fill="#fb923c"/><text x="396" y="72" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#431407">able</text></g><text class="fd" x="396" y="116" text-anchor="middle" font-family="monospace" font-size="16" fill="#fdba74" style="animation-delay:0.6s">61</text>
+    <g class="pop" style="animation-delay:0.9s"><rect x="174" y="150" width="96" height="50" rx="8" fill="#fed7aa"/><text x="222" y="182" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#431407">Hello</text></g><text class="fd" x="222" y="226" text-anchor="middle" font-family="monospace" font-size="16" fill="#fdba74" style="animation-delay:0.9s">9906</text><g class="pop" style="animation-delay:1.2s"><rect x="282" y="150" width="36" height="50" rx="8" fill="#fed7aa"/><text x="300" y="182" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#431407">,</text></g><text class="fd" x="300" y="226" text-anchor="middle" font-family="monospace" font-size="16" fill="#fdba74" style="animation-delay:1.2s">11</text><g class="pop" style="animation-delay:1.5s"><rect x="330" y="150" width="96" height="50" rx="8" fill="#fed7aa"/><text x="378" y="182" text-anchor="middle" font-family="monospace" font-size="22" font-weight="700" fill="#431407">world</text></g><text class="fd" x="378" y="226" text-anchor="middle" font-family="monospace" font-size="16" fill="#fdba74" style="animation-delay:1.5s">1917</text>
+   </g>
+   <!-- 5 LLM -->
+   <g class="scene">
+    <rect x="120" y="36" width="360" height="56" rx="28" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+    <text x="150" y="72" font-family="monospace" font-size="24" font-weight="700" fill="#dbeafe">The sky is</text>
+    <rect class="bk" x="300" y="52" width="12" height="28" fill="#93c5fd"/>
+    <text x="210" y="151" text-anchor="end" font-family="monospace" font-size="20" fill="#bfdbfe">blue</text><rect class="gw" x="224" y="130" width="250" height="30" rx="8" fill="#60a5fa" style="animation-delay:0s"/><text x="210" y="197" text-anchor="end" font-family="monospace" font-size="20" fill="#bfdbfe">clear</text><rect class="gw" x="224" y="176" width="76" height="30" rx="8" fill="#93c5fd" style="animation-delay:0.15s"/><text x="210" y="243" text-anchor="end" font-family="monospace" font-size="20" fill="#bfdbfe">green</text><rect class="gw" x="224" y="222" width="34" height="30" rx="8" fill="#bfdbfe" style="animation-delay:0.3s"/>
+   </g>
+   <!-- 6 COMPUTE -->
+   <g class="scene">
+    <circle class="halo" cx="300" cy="150" r="130" fill="#4ade80" opacity=".25"/>
+    <rect x="110" y="50" width="100" height="200" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="3"/><path d="M122 76H198M122 116H198M122 156H198M122 196H198" stroke="#0f172a" stroke-width="28" fill="none"/><path class="dash" d="M128 76H192M128 116H192M128 156H192M128 196H192" stroke="#4ade80" stroke-width="6" fill="none"/><circle cx="160" cy="232" r="15" fill="none" stroke="#4ade80" stroke-width="3"/><g class="spin" style="animation-duration:1.4s"><path d="M148 232H172M160 220V244" stroke="#86efac" stroke-width="4"/></g><rect x="250" y="50" width="100" height="200" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="3"/><path d="M262 76H338M262 116H338M262 156H338M262 196H338" stroke="#0f172a" stroke-width="28" fill="none"/><path class="dash" d="M268 76H332M268 116H332M268 156H332M268 196H332" stroke="#4ade80" stroke-width="6" fill="none"/><circle cx="300" cy="232" r="15" fill="none" stroke="#4ade80" stroke-width="3"/><g class="spin" style="animation-duration:1.4s"><path d="M288 232H312M300 220V244" stroke="#86efac" stroke-width="4"/></g><rect x="390" y="50" width="100" height="200" rx="8" fill="#1e293b" stroke="#4ade80" stroke-width="3"/><path d="M402 76H478M402 116H478M402 156H478M402 196H478" stroke="#0f172a" stroke-width="28" fill="none"/><path class="dash" d="M408 76H472M408 116H472M408 156H472M408 196H472" stroke="#4ade80" stroke-width="6" fill="none"/><circle cx="440" cy="232" r="15" fill="none" stroke="#4ade80" stroke-width="3"/><g class="spin" style="animation-duration:1.4s"><path d="M428 232H452M440 220V244" stroke="#86efac" stroke-width="4"/></g>
+   </g>
+  </svg>
+  <div class="cap go" id="a8-cap" aria-live="polite"><div class="era" id="a8-era"></div><h2 id="a8-ttl"></h2><p id="a8-dsc"></p></div>
+  <div class="tl" id="a8-tl"><div class="bar" id="a8-bar"></div></div>
+  <div class="hint" id="a8-hint">Scroll to explore ↓</div>
+ </div>
+</div>
+</div></div></div></div><div class="s-wrap s-sec"><div class="s-eye" style="color:var(--accent)">What students explore</div><h2 class="s-hd s-h2">Understand the tools that learn</h2><div class="s-two"><div><p class="s-p">Students go beyond using AI to understanding it. They explore how machines learn from examples, how neural networks and language models work, and what it takes to power them.</p></div><div class="s-chips"><span class="s-chip">Machine learning</span><span class="s-chip">Training data</span><span class="s-chip">Neural networks</span><span class="s-chip">Natural language processing</span><span class="s-chip">Tokens</span><span class="s-chip">Compute and processing power</span></div></div></div><div class="s-wrap s-sec"><div class="s-eye">How every session runs</div><h2 class="s-hd s-h2">Easy to lead. Built to grow.</h2><div class="s-grid4">
+<div class="s-card s-mini"><div class="s-hd s-num">10+</div><p>driving questions start every subject area</p></div>
+<div class="s-card s-mini"><div class="s-hd s-num">1</div><p>shared anchor opens 10+ further inquiries per session</p></div>
+<div class="s-card s-mini"><div class="s-hd s-num">I · We · You</div><p>Do protocol, with First Principles cheat sheets</p></div>
+<div class="s-card s-mini"><div class="s-hd s-num">0</div><p>prior technology experience needed to teach it</p></div></div></div><div class="s-wrap s-sec" style="padding-bottom:72px"><div class="s-cta"><h2 class="s-hd" style="margin:0;font-size:52px;line-height:1.05">Ready to explore Artificial Intelligence?</h2><p class="s-p" style="margin:16px auto 0;max-width:560px;color:#EDE9FF">Get the course, or ask us how it fits your classroom, school or family.</p><div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center"><a class="s-btn" style="background:#fff;color:#1B1F5E" href="https://augedu.com/artificialintelligence">Explore the full course</a><a class="s-btn s-btn-ghost" href="https://augedu.com/contact">Contact us</a></div></div></div><div class="s-wrap" style="padding-bottom:56px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between"><a class="s-pn" href="digital-art-design.html"><span class="s-pl">Previous</span><span class="s-hd">Digital Art &amp; Design</span></a><a class="s-pn" style="text-align:right" href="computer-engineering.html"><span class="s-pl">Next</span><span class="s-hd">Computer Engineering</span></a></div><div class="s-foot"><div class="s-wrap s-footin">
+<div>Augment Education, LLC. Philadelphia, PA</div>
+<div class="s-flinks"><a class="s-navlink" href="https://augedu.com/curriculum">Curriculum</a><a class="s-navlink" href="https://augedu.com/contact">Get in touch</a><a class="s-navlink" href="https://augedu.com/privacy-policy">Privacy policy</a><a class="s-navlink" href="https://augedu.com/terms-and-conditions">Terms and conditions</a></div>
+</div></div></div></main>
+<script>
+(function(){var R=document.getElementById("anim-8");
+var S=[
+{n:"ML",era:"Machine learning",t:"Learning from examples",d:"Instead of following rules a programmer wrote, the computer finds patterns in examples. Show it enough photos of cats and it learns what a cat looks like.",c:"#22d3ee"},
+{n:"Data",era:"Training data",t:"Examples are the fuel",d:"Models learn from huge collections of text, images and numbers. The quality of that data shapes what a model gets right, and what it gets wrong.",c:"#fbbf24"},
+{n:"Networks",era:"Neural networks",t:"Layers of tiny connections",d:"Loosely inspired by the brain, a neural network passes numbers through layers of connected nodes. Training tunes the strength of every connection.",c:"#a78bfa"},
+{n:"NLP",era:"Natural language (NLP)",t:"Teaching computers language",d:"Natural language processing helps computers read, write and make sense of human language, from translation to chatbots.",c:"#f472b6"},
+{n:"Tokens",era:"Tokens",t:"Language in small pieces",d:"Before a model reads text, it splits it into tokens: whole words, parts of words or punctuation. Each token becomes a number the model can work with.",c:"#fb923c"},
+{n:"LLMs",era:"Large language models",t:"Predicting the next token",d:"An LLM is a very large neural network trained on huge amounts of text. It writes by predicting a likely next token, again and again.",c:"#60a5fa"},
+{n:"Compute",era:"Compute & processing power",t:"The engines behind AI",d:"Training and running big models takes enormous calculation, done on specialized chips like GPUs in large data centers. More compute allows larger models.",c:"#4ade80"}];
+var sc=R.querySelectorAll(".scene"),card=document.getElementById("a8-card"),tl=document.getElementById("a8-tl"),bar=document.getElementById("a8-bar"),cap=document.getElementById("a8-cap");
+var i=-1,dots=[],track=document.getElementById("a8-track");
+S.forEach(function(s,k){var b=document.createElement("button");b.className="dot";b.innerHTML="<i></i>"+s.n;b.onclick=function(){scrollToStage(k)};tl.appendChild(b);dots.push(b)});
+function go(n){
+ if(n===i)return;i=n;var s=S[i];document.getElementById("a8-hint").style.opacity=i?0:.7;
+ sc.forEach(function(e,k){e.classList.toggle("on",k===i)});
+ dots.forEach(function(d,k){d.classList.toggle("on",k===i);d.classList.toggle("done",k<i)});
+ card.style.setProperty("--accent",s.c);
+ bar.style.width=(85.8*i/(S.length-1))+"%";
+ document.getElementById("a8-era").textContent=s.era;
+ document.getElementById("a8-ttl").textContent=s.t;
+ document.getElementById("a8-dsc").textContent=s.d;
+ cap.classList.remove("go");void cap.offsetWidth;cap.classList.add("go");
+}
+function span(){return Math.max(1,track.offsetHeight-innerHeight)}
+function onScroll(){var p=-track.getBoundingClientRect().top/span();p=Math.min(.9999,Math.max(0,p));go(Math.floor(p*S.length))}
+function scrollToStage(k){scrollTo({top:track.getBoundingClientRect().top+scrollY+(k+.5)/S.length*span(),behavior:"smooth"})}
+
+
+track.style.height=(S.length*70+100)+"vh";
+addEventListener("scroll",onScroll,{passive:true});addEventListener("resize",onScroll);
+go(0);onScroll();
+})();
+</script>
+</body>
+</html>

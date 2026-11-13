@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Augment Education | K-12 Technology Curriculum</title>
+<meta name="description" content="An inquiry-based, portfolio-building K-12 technology curriculum. Sixteen subjects from the history of technology to AI, with lessons any adult can lead.">
+<meta name="theme-color" content="#070B1A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Augment Education">
+<meta property="og:title" content="Augment Education | K-12 Technology Curriculum">
+<meta property="og:description" content="An inquiry-based, portfolio-building K-12 technology curriculum. Sixteen subjects from the history of technology to AI, with lessons any adult can lead.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%235EE6FF' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%235EE6FF'/%3E%3Ccircle cx='23' cy='5' r='3' fill='%23FFB547'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070B1A;--fg:#F4F6FF;--muted:#A9B3D6;--cyan:#5EE6FF;--violet:#9B8CFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070B1A;--fg:#F4F6FF}}
+:root[data-theme="dark"]{--bg:#070B1A;--fg:#F4F6FF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg)}
+.view[hidden]{display:none}
+.s-page{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--fg);position:relative;overflow-x:clip}
+.s-page *{box-sizing:border-box}
+.s-pagex{font-family:'Inter',system-ui,sans-serif}
+.s-wrap{max-width:1280px;margin:0 auto;padding-left:32px;padding-right:32px;position:relative;z-index:1}
+.s-top{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.s-brand{display:flex;align-items:center;gap:12px;color:#F4F6FF;text-decoration:none;font-size:22px}
+.s-brand:hover{color:#fff}
+.s-logo{position:relative;display:inline-block;width:34px;height:34px;border:2px solid var(--accent);border-radius:50%}
+.s-lp1{position:absolute;width:9px;height:9px;border-radius:50%;background:#FFB547;top:-5px;left:12px}
+.s-lp2{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:10px;top:10px}
+.s-navr{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.s-hero{padding-top:48px;padding-bottom:72px;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+.s-crumb{color:var(--muted);font-size:15px}
+.s-crumb a{color:var(--accent);text-decoration:none;font-weight:600}
+.s-h1{margin:20px 0 0;font-size:76px;line-height:1.04}
+.s-h2{margin:14px 0 0;font-size:48px;line-height:1.1;max-width:820px}
+.s-lead{margin:22px 0 0;font-size:24px;line-height:1.45;color:var(--muted);max-width:560px}
+.s-eye{color:var(--cyan);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.s-sec{padding-top:48px;padding-bottom:48px}
+.s-p{margin:0 0 16px;font-size:18px;line-height:1.7;color:var(--muted)}
+.s-two{margin-top:32px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.s-two>div:first-child{flex:1 1 440px;min-width:0}
+.s-chips{flex:1 1 380px;min-width:0;display:flex;flex-wrap:wrap;gap:12px}
+.s-soon{padding:48px;text-align:left}
+.s-grid4{margin-top:32px;display:flex;flex-wrap:wrap;gap:20px}
+.s-mini{flex:1 1 230px;padding:28px}
+.s-mini p{margin:8px 0 0;color:var(--muted);font-size:16px;line-height:1.5}
+.s-num{font-size:44px;color:var(--accent)}
+.s-cta{border-radius:36px;padding:64px 40px;text-align:center;background:linear-gradient(120deg,#2A2F8F,#6A3FD0 50%,#C23FA0);border:1px solid rgba(255,255,255,.2)}
+.s-pn{flex:1 1 280px;display:flex;flex-direction:column;gap:6px;padding:22px 26px;border:1px solid rgba(255,255,255,.12);border-radius:20px;color:#F4F6FF;text-decoration:none;font-size:22px;transition:border-color .25s,transform .25s}
+.s-pn:hover{border-color:var(--accent);transform:translateY(-4px);color:#fff}
+.s-pl{font-family:'Inter',system-ui,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.s-foot{border-top:1px solid rgba(255,255,255,.1);padding:32px 0;position:relative;z-index:1}
+.s-footin{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;color:var(--muted);font-size:15px}
+.s-flinks{display:flex;flex-wrap:wrap;gap:8px 24px}
+.s-orb{position:relative;width:420px;max-width:100%;height:420px;transform:scale(.9)}
+.s-orb .s-o1{width:400px;height:400px;margin:-200px 0 0 -200px}
+.s-orb .s-o2{width:290px;height:290px;margin:-145px 0 0 -145px}
+.s-orb .s-o3{width:180px;height:180px;margin:-90px 0 0 -90px}
+.s-orb .s-core{width:90px;height:90px;margin:-45px 0 0 -45px}
+a{color:#5EE6FF}
+a:hover{color:#FFFFFF}
+.s-lever{position:relative;width:380px;max-width:100%;height:240px}
+.s-beam{position:absolute;left:0;right:0;top:128px;height:14px;border-radius:7px;background:linear-gradient(90deg,#FFB547,#FF7AC8);transform-origin:68% 50%;animation:s_tilt 4s ease-in-out infinite alternate}
+.s-load{position:absolute;right:6px;top:-58px;width:56px;height:56px;border-radius:14px;background:linear-gradient(160deg,#9B8CFF,#5B4BD6);box-shadow:0 0 30px rgba(155,140,255,.6)}
+.s-effort{position:absolute;left:6px;top:-26px;width:24px;height:24px;border-radius:50%;background:#5EE6FF;box-shadow:0 0 20px #5EE6FF}
+.s-fulcrum{position:absolute;left:68%;margin-left:-26px;top:140px;width:0;height:0;border-left:26px solid transparent;border-right:26px solid transparent;border-bottom:60px solid #A9B3D6}
+.s-base{position:absolute;left:0;right:0;top:200px;height:6px;border-radius:3px;background:rgba(255,255,255,.18)}
+@keyframes s_tilt{from{transform:rotate(-13deg)}to{transform:rotate(11deg)}}
+.s-promo{display:flex;flex-wrap:wrap;gap:32px;align-items:center;padding:48px;background:linear-gradient(120deg,#2B2210,#0B1128 60%)}
+.s-flow{margin-top:40px;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:14px}
+.s-fnode{flex:1 1 220px;padding:26px;min-width:0}
+.s-fnode h3{margin:8px 0 0;font-size:24px}
+.s-fnode p{margin:10px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+.s-fl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.s-fout{background:linear-gradient(160deg,#4A1E45,#0B1128);border-color:rgba(255,122,200,.6)}
+.s-op{align-self:center;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;color:var(--muted);padding:0 2px}
+.s-leadbox{background:linear-gradient(120deg,#5A3A10,#6A3FD0 55%,#C23FA0)}
+.s-form{margin:30px auto 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:680px}
+.s-form input{flex:1 1 280px;min-height:52px;border-radius:999px;border:2px solid rgba(255,255,255,.35);background:rgba(7,11,26,.55);color:#fff;font-size:17px;padding:0 22px;font-family:inherit}
+.s-form input::placeholder{color:#C9CFEA}
+.s-form input:focus{outline:3px solid #fff;outline-offset:2px}
+.s-form .s-btn{min-height:52px}
+.s-msg{margin:16px 0 0;min-height:24px;font-size:16px;color:#FFE7B8}
+.s-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:760px){.s-op{width:100%;text-align:center;font-size:32px}}
+@media (prefers-reduced-motion:reduce){.s-beam{animation:none!important}}
+@media (max-width:640px){.s-h1{font-size:48px}.s-h2{font-size:34px}.s-wrap{padding-left:20px;padding-right:20px}}
+.s-pagex{font-family:'Inter',system-ui,sans-serif;background:#070B1A;color:#F4F6FF;overflow:hidden;position:relative}
+.s-page *{box-sizing:border-box}
+.s-hd{font-family:'Space Grotesk','Inter',system-ui,sans-serif;font-weight:700;letter-spacing:-0.02em}
+.s-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+.s-btn:hover{transform:translateY(-3px)}
+.s-btn-main{background:linear-gradient(90deg,var(--accent),#9B8CFF);color:#070B1A}
+.s-btn-main:hover{color:#070B1A;box-shadow:0 12px 40px rgba(94,230,255,.45)}
+.s-btn-ghost{border:1px solid rgba(255,255,255,.28);color:#F4F6FF}
+.s-btn-ghost:hover{border-color:var(--accent);color:#F4F6FF;box-shadow:0 0 0 4px rgba(94,230,255,.15)}
+.s-navlink{color:#A9B3D6;text-decoration:none;font-size:15px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+.s-navlink:hover{color:#FFFFFF}
+.s-grad{background:linear-gradient(90deg,#5EE6FF,#9B8CFF,#FF7AC8,#FFB547,#5EE6FF);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shift 8s linear infinite}
+.s-card{background:linear-gradient(160deg,#111A3A,#0B1128);border:1px solid rgba(255,255,255,.1);border-radius:24px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.s-card:hover{transform:translateY(-8px);border-color:rgba(94,230,255,.6);box-shadow:0 24px 60px rgba(94,230,255,.14)}
+.s-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font-size:15px;font-weight:500;transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.s-chip:hover{background:rgba(94,230,255,.14);border-color:var(--accent);transform:scale(1.06)}
+.s-chip2:hover{background:rgba(255,122,200,.16);border-color:#FF7AC8}
+.s-orbit{position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%;left:50%;top:50%}
+.s-o1{width:520px;height:520px;margin:-260px 0 0 -260px;animation:spin 46s linear infinite}
+.s-o2{width:380px;height:380px;margin:-190px 0 0 -190px;animation:spin 30s linear infinite reverse}
+.s-o3{width:240px;height:240px;margin:-120px 0 0 -120px;animation:spin 18s linear infinite}
+.s-dot{position:absolute;border-radius:50%}
+.s-core{position:absolute;left:50%;top:50%;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFFFFF,#5EE6FF 35%,#6A5CFF 75%,#1B1F5E);box-shadow:0 0 80px rgba(94,230,255,.7),0 0 160px rgba(155,140,255,.5);animation:pulse 4s ease-in-out infinite}
+.s-mq{display:flex;width:max-content;animation:marq 38s linear infinite}
+.s-mq span{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:28px;padding:0 30px;color:#A9B3D6;white-space:nowrap}
+.s-mq i{font-style:normal;color:#5EE6FF}
+.s-glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+.s-stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 120px 90px,#cfe,transparent),radial-gradient(1.5px 1.5px at 210px 160px,#fff,transparent),radial-gradient(1px 1px at 300px 40px,#ddf,transparent);background-size:340px 220px;opacity:.55;animation:twinkle 6s ease-in-out infinite alternate;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+@keyframes shift{to{background-position:300% 0}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(60px,40px)}}
+@keyframes twinkle{from{opacity:.25}to{opacity:.7}}
+@keyframes rise{from{opacity:0;transform:translateY(56px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes slidel{from{opacity:0;transform:translateX(-80px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@supports (animation-timeline:view()){
+.s-rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+.s-rl{animation:slidel linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+.s-bar{transform-origin:left;animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
+}
+@media (prefers-reduced-motion:reduce){.s-page *{animation:none!important}}
+@property --accent{syntax:'<color>';inherits:true;initial-value:#f97316}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<main class="view" id="view-home"><div class="s-pagex s-page" style="--accent:#5EE6FF">
+
+<div class="s-glow" style="width:620px;height:620px;left:-160px;top:60px;background:rgba(106,92,255,.45)"></div>
+<div class="s-glow" style="width:520px;height:520px;right:-120px;top:520px;background:rgba(94,230,255,.28)"></div>
+<div class="s-stars"></div>
+
+<!-- NAV -->
+<div style="position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:24px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="index.html" class="s-hd" style="display:flex;align-items:center;gap:12px;color:#F4F6FF;text-decoration:none;font-size:22px">
+<span style="position:relative;display:inline-block;width:34px;height:34px;border:2px solid var(--accent);border-radius:50%"><span style="position:absolute;width:9px;height:9px;border-radius:50%;background:#FFB547;top:-5px;left:12px"></span><span style="position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:10px;top:10px"></span></span>
+Augment Education
+</a>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px">
+<a class="s-navlink" href="#home-how">How it works</a>
+<a class="s-navlink" href="#home-curriculum">Curriculum</a>
+<a class="s-navlink" href="#home-programs">Programs</a>
+<a class="s-navlink" href="#home-why">Why it works</a>
+<a class="s-btn s-btn-main" href="https://augedu.com/contact" style="min-height:44px">Get in touch</a>
+</div>
+</div>
+
+<!-- HERO -->
+<div id="home-top" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:56px 32px 72px;display:flex;flex-wrap:wrap;align-items:center;gap:40px">
+<div style="flex:1 1 520px;min-width:0">
+<div style="display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(94,230,255,.4);border-radius:999px;color:#5EE6FF;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase">K-12 Technology Curriculum</div>
+<h1 class="s-hd" style="margin:24px 0 0;font-size:84px;line-height:1.02">Learn technology by <span class="s-grad">asking why.</span></h1>
+<p style="margin:28px 0 0;font-size:21px;line-height:1.55;color:#A9B3D6;max-width:560px">An inquiry-based, portfolio-building pathway where every session ends with something a student made, and owns.</p>
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:16px">
+<a class="s-btn s-btn-main" href="https://augedu.com/curriculum">Explore the Curriculum</a>
+<a class="s-btn s-btn-ghost" href="https://augedu.com/filegame">Play the File Sorting Game</a>
+</div>
+</div>
+<div style="flex:1 1 420px;min-width:0;display:flex;justify-content:center">
+<div style="position:relative;width:560px;max-width:100%;height:560px">
+<div class="s-orbit s-o1"><div class="s-dot" style="width:22px;height:22px;background:#FFB547;left:50%;top:-11px;margin-left:-11px;box-shadow:0 0 24px #FFB547"></div><div class="s-dot" style="width:12px;height:12px;background:#FF7AC8;left:50%;bottom:-6px;margin-left:-6px"></div></div>
+<div class="s-orbit s-o2"><div class="s-dot" style="width:16px;height:16px;background:#9B8CFF;left:-8px;top:50%;margin-top:-8px;box-shadow:0 0 20px #9B8CFF"></div><div class="s-dot" style="width:9px;height:9px;background:#FFFFFF;right:-4px;top:50%;margin-top:-4px"></div></div>
+<div class="s-orbit s-o3"><div class="s-dot" style="width:14px;height:14px;background:#5EE6FF;left:50%;top:-7px;margin-left:-7px;box-shadow:0 0 18px #5EE6FF"></div></div>
+<div class="s-core"></div>
+</div>
+</div>
+</div>
+
+<!-- STATS -->
+<div style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 64px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 220px;padding:28px"><div class="s-hd" style="font-size:56px;color:#5EE6FF">16</div><div style="color:#A9B3D6;font-size:16px;margin-top:4px">subject areas, from fire to AI</div></div>
+<div class="s-card s-rv" style="flex:1 1 220px;padding:28px"><div class="s-hd" style="font-size:56px;color:#9B8CFF">10+</div><div style="color:#A9B3D6;font-size:16px;margin-top:4px">driving questions per subject</div></div>
+<div class="s-card s-rv" style="flex:1 1 220px;padding:28px"><div class="s-hd" style="font-size:56px;color:#FF7AC8">K-12</div><div style="color:#A9B3D6;font-size:16px;margin-top:4px">one connected pathway</div></div>
+<div class="s-card s-rv" style="flex:1 1 220px;padding:28px"><div class="s-hd" style="font-size:56px;color:#FFB547">10+</div><div style="color:#A9B3D6;font-size:16px;margin-top:4px">inquiries from every session anchor</div></div>
+</div>
+
+<!-- MARQUEE -->
+<div style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);padding:22px 0;overflow:hidden;background:rgba(255,255,255,.02)">
+<div class="s-mq" aria-hidden="true">
+<span>History of Technology <i>/</i></span><span>Digital Citizenship <i>/</i></span><span>Communications <i>/</i></span><span>Hardware &amp; Software <i>/</i></span><span>Coding <i>/</i></span><span>Space &amp; Robots <i>/</i></span><span>Electricity <i>/</i></span><span>Digital Art <i>/</i></span><span>Artificial Intelligence <i>/</i></span><span>Computer Engineering <i>/</i></span><span>VR &amp; AR <i>/</i></span><span>Ethics in Tech <i>/</i></span><span>Web 3.0 <i>/</i></span><span>Data &amp; Blockchain <i>/</i></span><span>3D Printing <i>/</i></span><span>Food &amp; Med Tech <i>/</i></span>
+<span>History of Technology <i>/</i></span><span>Digital Citizenship <i>/</i></span><span>Communications <i>/</i></span><span>Hardware &amp; Software <i>/</i></span><span>Coding <i>/</i></span><span>Space &amp; Robots <i>/</i></span><span>Electricity <i>/</i></span><span>Digital Art <i>/</i></span><span>Artificial Intelligence <i>/</i></span><span>Computer Engineering <i>/</i></span><span>VR &amp; AR <i>/</i></span><span>Ethics in Tech <i>/</i></span><span>Web 3.0 <i>/</i></span><span>Data &amp; Blockchain <i>/</i></span><span>3D Printing <i>/</i></span><span>Food &amp; Med Tech <i>/</i></span>
+</div>
+</div>
+
+<!-- LEVER -->
+<div style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:120px 32px 100px;text-align:center">
+<div class="s-hd s-rv" style="font-size:130px;line-height:1"><span class="s-grad">ABC 0101 AI</span></div>
+<p class="s-rv" style="margin:36px auto 0;max-width:820px;font-size:28px;line-height:1.45;font-family:'Space Grotesk','Inter',system-ui,sans-serif;font-weight:500">Archimedes said a long enough lever could move the world. With every new technology, the lever gets longer.</p>
+<p class="s-rv" style="margin:20px auto 0;max-width:640px;font-size:19px;line-height:1.6;color:#A9B3D6">So how will students use these tools to build the future? They want to know.</p>
+</div>
+
+<!-- HOW IT WORKS -->
+<div id="home-how" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:40px 32px 100px">
+<div style="color:#5EE6FF;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px">How a session works</div>
+<h2 class="s-hd s-rl" style="margin:14px 0 0;font-size:56px;line-height:1.08;max-width:760px">Question. Explore. Debate. Create.</h2>
+<div class="s-bar" style="height:4px;width:160px;margin-top:24px;border-radius:4px;background:linear-gradient(90deg,#5EE6FF,#FF7AC8)"></div>
+<div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 260px;padding:32px"><div class="s-hd" style="font-size:64px;color:rgba(94,230,255,.9)">01</div><h3 class="s-hd" style="margin:12px 0 0;font-size:26px">Ask questions</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">What do you find interesting about this subject? How can you find more information? Why does it matter to you?</p></div>
+<div class="s-card s-rv" style="flex:1 1 260px;padding:32px"><div class="s-hd" style="font-size:64px;color:rgba(155,140,255,.95)">02</div><h3 class="s-hd" style="margin:12px 0 0;font-size:26px">Find answers</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Does the information make sense? How many new questions pop up along the way?</p></div>
+<div class="s-card s-rv" style="flex:1 1 260px;padding:32px"><div class="s-hd" style="font-size:64px;color:rgba(255,122,200,.95)">03</div><h3 class="s-hd" style="margin:12px 0 0;font-size:26px">Discuss and share</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Classmates take turns debating and defending different opinions. Communication is built into every subject.</p></div>
+<div class="s-card s-rv" style="flex:1 1 260px;padding:32px"><div class="s-hd" style="font-size:64px;color:rgba(255,181,71,.95)">04</div><h3 class="s-hd" style="margin:12px 0 0;font-size:26px">Collaborate and create</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Students grow a personal digital asset library and visual knowledge trees, a portfolio of real work.</p></div>
+</div>
+<p class="s-rv" style="margin:32px 0 0;color:#A9B3D6;font-size:17px">Lessons follow a structured <strong style="color:#F4F6FF">“I Do, We Do, You Do”</strong> protocol, with First Principles cheat sheets so any adult can lead.</p>
+</div>
+
+<!-- PILLARS -->
+<div style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 100px">
+<div style="color:#9B8CFF;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px">Four pillars</div>
+<h2 class="s-hd s-rl" style="margin:14px 0 0;font-size:56px;line-height:1.08;max-width:760px">Built on first principles.</h2>
+<div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 540px;padding:36px"><h3 class="s-hd" style="margin:0;font-size:30px;color:#5EE6FF">Inquiry-based</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.65;font-size:17px">Stoke curiosity and critical thinking. Students answer their own questions through demonstrable assignments and First Principles learning.</p></div>
+<div class="s-card s-rv" style="flex:1 1 540px;padding:36px"><h3 class="s-hd" style="margin:0;font-size:30px;color:#9B8CFF">Individualized</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.65;font-size:17px">Ownership and fulfillment. Multiple pathways for diverse learners, each moving at their own pace with teacher guidance.</p></div>
+<div class="s-card s-rv" style="flex:1 1 540px;padding:36px"><h3 class="s-hd" style="margin:0;font-size:30px;color:#FF7AC8">Portfolio-building</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.65;font-size:17px">A body of work that builds year after year. Students own it in their school or personal Google, Canva, M365 or other platform.</p></div>
+<div class="s-card s-rv" style="flex:1 1 540px;padding:36px"><h3 class="s-hd" style="margin:0;font-size:30px;color:#FFB547">Pathway</h3><p style="margin:12px 0 0;color:#A9B3D6;line-height:1.65;font-size:17px">Aligned with national standards: ISTE, CSTA and state frameworks, with cross-curricular value in ELA, STEM and digital production.</p></div>
+</div>
+</div>
+
+<!-- CURRICULUM -->
+<div id="home-curriculum" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 100px">
+<div style="color:#FF7AC8;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px">The curriculum map</div>
+<h2 class="s-hd s-rl" style="margin:14px 0 0;font-size:56px;line-height:1.08;max-width:820px">Sixteen subjects. One pathway from K to 12.</h2>
+<p class="s-rv" style="margin:20px 0 0;color:#A9B3D6;font-size:19px;max-width:720px;line-height:1.6">Each subject area starts from 10+ driving questions that lead students toward continued learning.</p>
+<div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 540px;padding:40px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 class="s-hd" style="margin:0;font-size:34px">Intro to Technology</h3><span style="color:#5EE6FF;font-weight:600">K-8</span></div>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px">
+<a class="s-chip" href="history-of-technology.html">History of Technology</a><a class="s-chip" href="digital-citizenship.html">Digital Citizenship</a><a class="s-chip" href="communications.html">Communications</a><a class="s-chip" href="hardware-software.html">Hardware &amp; Software</a><a class="s-chip" href="coding-programming.html">Coding &amp; Programming</a><a class="s-chip" href="space-robots-machines.html">Space, Robots &amp; Machines</a><a class="s-chip" href="electricity-energy.html">Electricity &amp; Energy</a><a class="s-chip" href="digital-art-design.html">Digital Art &amp; Design</a>
+</div>
+</div>
+<div class="s-card s-rv" style="flex:1 1 540px;padding:40px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 class="s-hd" style="margin:0;font-size:34px">Advanced Technology</h3><span style="color:#FF7AC8;font-weight:600">6-12</span></div>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px">
+<a class="s-chip s-chip2" href="artificial-intelligence.html">Artificial Intelligence</a><a class="s-chip s-chip2" href="computer-engineering.html">Computer Engineering</a><a class="s-chip s-chip2" href="vr-ar-spatial-computing.html">VR, AR &amp; Spatial Computing</a><a class="s-chip s-chip2" href="philosophy-ethics.html">Philosophy &amp; Ethics in Tech</a><a class="s-chip s-chip2" href="digital-design-web3.html">Digital Design &amp; Web 3.0</a><a class="s-chip s-chip2" href="data-it-blockchain.html">Data, IT, Blockchain</a><a class="s-chip s-chip2" href="3d-printing-construction.html">3D Printing &amp; Construction</a><a class="s-chip s-chip2" href="food-medical-tech.html">Food &amp; Medical Tech</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- PROGRAMS -->
+<div id="home-programs" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 100px">
+<div style="color:#FFB547;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px">Three core programs</div>
+<h2 class="s-hd s-rl" style="margin:14px 0 0;font-size:56px;line-height:1.08;max-width:820px">Pick your launch pad.</h2>
+<div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 340px;padding:40px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,#10305A,#0B1128)"><div class="s-hd" style="font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#5EE6FF">Technology Foundations</div><div><div class="s-hd" style="font-size:44px;line-height:1.05">Digital Citizenship</div><p style="margin:14px 0 0;color:#A9B3D6;font-size:16px;line-height:1.6">The starting point for safe, thoughtful, capable technology use.</p></div></div>
+<div class="s-card s-rv" style="flex:1 1 340px;padding:40px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,#3A1F5E,#0B1128)"><div class="s-hd" style="font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#FF7AC8">Applied and Creative Tech</div><div><div class="s-hd" style="font-size:44px;line-height:1.05">Design and Media</div><p style="margin:14px 0 0;color:#A9B3D6;font-size:16px;line-height:1.6">Documents, websites, video and presentations that students make and keep.</p></div></div>
+<div class="s-card s-rv" style="flex:1 1 340px;padding:40px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,#5A3A10,#0B1128)"><div class="s-hd" style="font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:#FFB547">Modern and Emerging Tech</div><div><div class="s-hd" style="font-size:44px;line-height:1.05">AI and Robotics</div><p style="margin:14px 0 0;color:#A9B3D6;font-size:16px;line-height:1.6">The newest tools, explored from first principles.</p></div></div>
+</div>
+</div>
+
+<!-- FP PROMO --><div class="s-wrap" style="padding-top:0;padding-bottom:100px"><div class="s-card s-rv s-promo"><div style="flex:1 1 440px;min-width:0"><div class="s-eye" style="color:#FFB547">New: a thinking skill</div><h2 class="s-hd" style="margin:12px 0 0;font-size:48px;line-height:1.05">First Principles</h2><p class="s-p" style="margin:16px 0 0;max-width:520px">Strip a problem down to what is true, then build from there. See how it powers inquiry-based, individualized learning.</p><div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:14px"><a class="s-btn s-btn-main" href="first-principles.html">Explore First Principles</a><a class="s-btn s-btn-ghost" href="first-principles.html#fp-get">Get the free infographic</a></div></div><div style="flex:1 1 260px;display:flex;justify-content:center"><div class="s-lever" aria-hidden="true"><div class="s-beam"><span class="s-load"></span><span class="s-effort"></span></div><div class="s-fulcrum"></div><div class="s-base"></div></div></div></div></div>
+<!-- WHY -->
+<div id="home-why" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 100px">
+<div style="color:#5EE6FF;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px">Why it works</div>
+<h2 class="s-hd s-rl" style="margin:14px 0 0;font-size:56px;line-height:1.08;max-width:820px">Easy to start. Hard to outgrow.</h2>
+<div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 360px;padding:32px"><h3 class="s-hd" style="margin:0;font-size:24px">Compatible with existing tech</h3><p style="margin:10px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">No downloads, no AI, no district firewall reviews, no complex student accounts.</p></div>
+<div class="s-card s-rv" style="flex:1 1 360px;padding:32px"><h3 class="s-hd" style="margin:0;font-size:24px">Portfolios that matter</h3><p style="margin:10px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Every session yields a student-owned asset. Seniors graduate with a showcase for college or work.</p></div>
+<div class="s-card s-rv" style="flex:1 1 360px;padding:32px"><h3 class="s-hd" style="margin:0;font-size:24px">Easy to facilitate</h3><p style="margin:10px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Teachers, substitutes, aides, counselors or parents can lead. Everything is included.</p></div>
+<div class="s-card s-rv" style="flex:1 1 360px;padding:32px"><h3 class="s-hd" style="margin:0;font-size:24px">Shared anchors, divergent paths</h3><p style="margin:10px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">One introductory anchor opens 10+ further inquiries across grades and ability levels.</p></div>
+<div class="s-card s-rv" style="flex:1 1 360px;padding:32px"><h3 class="s-hd" style="margin:0;font-size:24px">Cross-curricular</h3><p style="margin:10px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Projects connect STEM, language arts, humanities and ethics into complex capstones.</p></div>
+<div class="s-card s-rv" style="flex:1 1 360px;padding:32px"><h3 class="s-hd" style="margin:0;font-size:24px">Engaging by nature</h3><p style="margin:10px 0 0;color:#A9B3D6;line-height:1.6;font-size:16px">Technology draws students and teachers into meaningful talk about what is new.</p></div>
+</div>
+<div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="s-card s-rv" style="flex:1 1 540px;padding:36px"><h3 class="s-hd" style="margin:0;font-size:28px;color:#5EE6FF">For students</h3><ul style="margin:16px 0 0;padding-left:20px;color:#A9B3D6;line-height:1.9;font-size:17px"><li>Build experience with technology</li><li>Map an individualized pathway and portfolio</li><li>Gain expertise and confidence</li><li>Develop First Principles thinking and inquiry habits</li></ul></div>
+<div class="s-card s-rv" style="flex:1 1 540px;padding:36px"><h3 class="s-hd" style="margin:0;font-size:28px;color:#FF7AC8">For teachers</h3><ul style="margin:16px 0 0;padding-left:20px;color:#A9B3D6;line-height:1.9;font-size:17px"><li>Facilitate discussion about technology</li><li>Challenge students to dig deeper and organize ideas</li><li>Nurture curiosity and make learning visible</li><li>No prior technology experience required</li></ul></div>
+</div>
+</div>
+
+<!-- CTA -->
+<div id="home-start" style="position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 32px 80px">
+<div class="s-rv" style="position:relative;overflow:hidden;border-radius:36px;padding:72px 48px;text-align:center;background:linear-gradient(120deg,#2A2F8F,#6A3FD0 50%,#C23FA0);border:1px solid rgba(255,255,255,.2)">
+<h2 class="s-hd" style="margin:0;font-size:60px;line-height:1.05">Try a free lesson.</h2>
+<p style="margin:18px auto 0;max-width:560px;font-size:20px;line-height:1.55;color:#EDE9FF">We’ll email you a PDF lesson plan. Turnkey, ready for teachers, classrooms and families.</p>
+<div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
+<a class="s-btn" href="https://augedu.com" style="background:#FFFFFF;color:#1B1F5E">Get the free lesson</a>
+<a class="s-btn s-btn-ghost" href="https://augedu.com/contact">Contact us</a>
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.1);padding:32px">
+<div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;color:#A9B3D6;font-size:15px">
+<div>Augment Education, LLC. Philadelphia, PA</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 24px">
+<a class="s-navlink" href="https://augedu.com/curriculum">Curriculum</a>
+<a class="s-navlink" href="https://augedu.com/contact">Get in touch</a>
+<a class="s-navlink" href="https://augedu.com/privacy-policy">Privacy policy</a>
+<a class="s-navlink" href="https://augedu.com/terms-and-conditions">Terms and conditions</a>
+</div>
+</div>
+</div>
+
+</div></main>
+</body>
+</html>

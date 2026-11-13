@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Electricity &amp; Energy | Augment Education</title>
+<meta name="description" content="Students follow electricity from tiny moving charges to the power grid.">
+<meta name="theme-color" content="#070B1A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Augment Education">
+<meta property="og:title" content="Electricity &amp; Energy | Augment Education">
+<meta property="og:description" content="Students follow electricity from tiny moving charges to the power grid.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%235EE6FF' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%235EE6FF'/%3E%3Ccircle cx='23' cy='5' r='3' fill='%23FFB547'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070B1A;--fg:#F4F6FF;--muted:#A9B3D6;--cyan:#5EE6FF;--violet:#9B8CFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070B1A;--fg:#F4F6FF}}
+:root[data-theme="dark"]{--bg:#070B1A;--fg:#F4F6FF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg)}
+.view[hidden]{display:none}
+.s-page{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--fg);position:relative;overflow-x:clip}
+.s-page *{box-sizing:border-box}
+.s-pagex{font-family:'Inter',system-ui,sans-serif}
+.s-wrap{max-width:1280px;margin:0 auto;padding-left:32px;padding-right:32px;position:relative;z-index:1}
+.s-top{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.s-brand{display:flex;align-items:center;gap:12px;color:#F4F6FF;text-decoration:none;font-size:22px}
+.s-brand:hover{color:#fff}
+.s-logo{position:relative;display:inline-block;width:34px;height:34px;border:2px solid var(--accent);border-radius:50%}
+.s-lp1{position:absolute;width:9px;height:9px;border-radius:50%;background:#FFB547;top:-5px;left:12px}
+.s-lp2{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:10px;top:10px}
+.s-navr{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.s-hero{padding-top:48px;padding-bottom:72px;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+.s-crumb{color:var(--muted);font-size:15px}
+.s-crumb a{color:var(--accent);text-decoration:none;font-weight:600}
+.s-h1{margin:20px 0 0;font-size:76px;line-height:1.04}
+.s-h2{margin:14px 0 0;font-size:48px;line-height:1.1;max-width:820px}
+.s-lead{margin:22px 0 0;font-size:24px;line-height:1.45;color:var(--muted);max-width:560px}
+.s-eye{color:var(--cyan);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.s-sec{padding-top:48px;padding-bottom:48px}
+.s-p{margin:0 0 16px;font-size:18px;line-height:1.7;color:var(--muted)}
+.s-two{margin-top:32px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.s-two>div:first-child{flex:1 1 440px;min-width:0}
+.s-chips{flex:1 1 380px;min-width:0;display:flex;flex-wrap:wrap;gap:12px}
+.s-soon{padding:48px;text-align:left}
+.s-grid4{margin-top:32px;display:flex;flex-wrap:wrap;gap:20px}
+.s-mini{flex:1 1 230px;padding:28px}
+.s-mini p{margin:8px 0 0;color:var(--muted);font-size:16px;line-height:1.5}
+.s-num{font-size:44px;color:var(--accent)}
+.s-cta{border-radius:36px;padding:64px 40px;text-align:center;background:linear-gradient(120deg,#2A2F8F,#6A3FD0 50%,#C23FA0);border:1px solid rgba(255,255,255,.2)}
+.s-pn{flex:1 1 280px;display:flex;flex-direction:column;gap:6px;padding:22px 26px;border:1px solid rgba(255,255,255,.12);border-radius:20px;color:#F4F6FF;text-decoration:none;font-size:22px;transition:border-color .25s,transform .25s}
+.s-pn:hover{border-color:var(--accent);transform:translateY(-4px);color:#fff}
+.s-pl{font-family:'Inter',system-ui,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.s-foot{border-top:1px solid rgba(255,255,255,.1);padding:32px 0;position:relative;z-index:1}
+.s-footin{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;color:var(--muted);font-size:15px}
+.s-flinks{display:flex;flex-wrap:wrap;gap:8px 24px}
+.s-orb{position:relative;width:420px;max-width:100%;height:420px;transform:scale(.9)}
+.s-orb .s-o1{width:400px;height:400px;margin:-200px 0 0 -200px}
+.s-orb .s-o2{width:290px;height:290px;margin:-145px 0 0 -145px}
+.s-orb .s-o3{width:180px;height:180px;margin:-90px 0 0 -90px}
+.s-orb .s-core{width:90px;height:90px;margin:-45px 0 0 -45px}
+a{color:#5EE6FF}
+a:hover{color:#FFFFFF}
+.s-lever{position:relative;width:380px;max-width:100%;height:240px}
+.s-beam{position:absolute;left:0;right:0;top:128px;height:14px;border-radius:7px;background:linear-gradient(90deg,#FFB547,#FF7AC8);transform-origin:68% 50%;animation:s_tilt 4s ease-in-out infinite alternate}
+.s-load{position:absolute;right:6px;top:-58px;width:56px;height:56px;border-radius:14px;background:linear-gradient(160deg,#9B8CFF,#5B4BD6);box-shadow:0 0 30px rgba(155,140,255,.6)}
+.s-effort{position:absolute;left:6px;top:-26px;width:24px;height:24px;border-radius:50%;background:#5EE6FF;box-shadow:0 0 20px #5EE6FF}
+.s-fulcrum{position:absolute;left:68%;margin-left:-26px;top:140px;width:0;height:0;border-left:26px solid transparent;border-right:26px solid transparent;border-bottom:60px solid #A9B3D6}
+.s-base{position:absolute;left:0;right:0;top:200px;height:6px;border-radius:3px;background:rgba(255,255,255,.18)}
+@keyframes s_tilt{from{transform:rotate(-13deg)}to{transform:rotate(11deg)}}
+.s-promo{display:flex;flex-wrap:wrap;gap:32px;align-items:center;padding:48px;background:linear-gradient(120deg,#2B2210,#0B1128 60%)}
+.s-flow{margin-top:40px;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:14px}
+.s-fnode{flex:1 1 220px;padding:26px;min-width:0}
+.s-fnode h3{margin:8px 0 0;font-size:24px}
+.s-fnode p{margin:10px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+.s-fl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.s-fout{background:linear-gradient(160deg,#4A1E45,#0B1128);border-color:rgba(255,122,200,.6)}
+.s-op{align-self:center;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:40px;color:var(--muted);padding:0 2px}
+.s-leadbox{background:linear-gradient(120deg,#5A3A10,#6A3FD0 55%,#C23FA0)}
+.s-form{margin:30px auto 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:680px}
+.s-form input{flex:1 1 280px;min-height:52px;border-radius:999px;border:2px solid rgba(255,255,255,.35);background:rgba(7,11,26,.55);color:#fff;font-size:17px;padding:0 22px;font-family:inherit}
+.s-form input::placeholder{color:#C9CFEA}
+.s-form input:focus{outline:3px solid #fff;outline-offset:2px}
+.s-form .s-btn{min-height:52px}
+.s-msg{margin:16px 0 0;min-height:24px;font-size:16px;color:#FFE7B8}
+.s-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:760px){.s-op{width:100%;text-align:center;font-size:32px}}
+@media (prefers-reduced-motion:reduce){.s-beam{animation:none!important}}
+@media (max-width:640px){.s-h1{font-size:48px}.s-h2{font-size:34px}.s-wrap{padding-left:20px;padding-right:20px}}
+.s-pagex{font-family:'Inter',system-ui,sans-serif;background:#070B1A;color:#F4F6FF;overflow:hidden;position:relative}
+.s-page *{box-sizing:border-box}
+.s-hd{font-family:'Space Grotesk','Inter',system-ui,sans-serif;font-weight:700;letter-spacing:-0.02em}
+.s-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+.s-btn:hover{transform:translateY(-3px)}
+.s-btn-main{background:linear-gradient(90deg,var(--accent),#9B8CFF);color:#070B1A}
+.s-btn-main:hover{color:#070B1A;box-shadow:0 12px 40px rgba(94,230,255,.45)}
+.s-btn-ghost{border:1px solid rgba(255,255,255,.28);color:#F4F6FF}
+.s-btn-ghost:hover{border-color:var(--accent);color:#F4F6FF;box-shadow:0 0 0 4px rgba(94,230,255,.15)}
+.s-navlink{color:#A9B3D6;text-decoration:none;font-size:15px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+.s-navlink:hover{color:#FFFFFF}
+.s-grad{background:linear-gradient(90deg,#5EE6FF,#9B8CFF,#FF7AC8,#FFB547,#5EE6FF);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shift 8s linear infinite}
+.s-card{background:linear-gradient(160deg,#111A3A,#0B1128);border:1px solid rgba(255,255,255,.1);border-radius:24px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.s-card:hover{transform:translateY(-8px);border-color:rgba(94,230,255,.6);box-shadow:0 24px 60px rgba(94,230,255,.14)}
+.s-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font-size:15px;font-weight:500;transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.s-chip:hover{background:rgba(94,230,255,.14);border-color:var(--accent);transform:scale(1.06)}
+.s-chip2:hover{background:rgba(255,122,200,.16);border-color:#FF7AC8}
+.s-orbit{position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%;left:50%;top:50%}
+.s-o1{width:520px;height:520px;margin:-260px 0 0 -260px;animation:spin 46s linear infinite}
+.s-o2{width:380px;height:380px;margin:-190px 0 0 -190px;animation:spin 30s linear infinite reverse}
+.s-o3{width:240px;height:240px;margin:-120px 0 0 -120px;animation:spin 18s linear infinite}
+.s-dot{position:absolute;border-radius:50%}
+.s-core{position:absolute;left:50%;top:50%;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFFFFF,#5EE6FF 35%,#6A5CFF 75%,#1B1F5E);box-shadow:0 0 80px rgba(94,230,255,.7),0 0 160px rgba(155,140,255,.5);animation:pulse 4s ease-in-out infinite}
+.s-mq{display:flex;width:max-content;animation:marq 38s linear infinite}
+.s-mq span{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:28px;padding:0 30px;color:#A9B3D6;white-space:nowrap}
+.s-mq i{font-style:normal;color:#5EE6FF}
+.s-glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+.s-stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 120px 90px,#cfe,transparent),radial-gradient(1.5px 1.5px at 210px 160px,#fff,transparent),radial-gradient(1px 1px at 300px 40px,#ddf,transparent);background-size:340px 220px;opacity:.55;animation:twinkle 6s ease-in-out infinite alternate;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+@keyframes shift{to{background-position:300% 0}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(60px,40px)}}
+@keyframes twinkle{from{opacity:.25}to{opacity:.7}}
+@keyframes rise{from{opacity:0;transform:translateY(56px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes slidel{from{opacity:0;transform:translateX(-80px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@supports (animation-timeline:view()){
+.s-rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+.s-rl{animation:slidel linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+.s-bar{transform-origin:left;animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
+}
+@media (prefers-reduced-motion:reduce){.s-page *{animation:none!important}}
+@property --accent{syntax:'<color>';inherits:true;initial-value:#f97316}
+#anim-6{--bg:#f4f1ea;--fg:#1b2333;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){#anim-6:not([data-theme="light"]){--bg:#0a0f1a;--fg:#e9edf5}}
+#anim-6[data-theme="dark"]{--bg:#0a0f1a;--fg:#e9edf5}
+#anim-6{scroll-padding-top:env(safe-area-inset-top,0px)}
+#anim-6 *{box-sizing:border-box}
+#anim-6{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 14px}
+#anim-6 .track{position:relative}
+#anim-6 .stick{position:sticky;top:0;min-height:100vh;display:flex;align-items:center;justify-content:center}
+#anim-6 .card{--accent:#fde047;width:100%;max-width:880px;background:#0b1020;color:#e9edf5;border-radius:20px;position:relative;overflow:hidden;transition:--accent 1.2s}
+#anim-6 .glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 55%,var(--accent),transparent 62%);opacity:.28}
+#anim-6 .in{position:relative;padding:18px 18px 16px}
+#anim-6 .a-eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px;opacity:.7;font-weight:600}
+#anim-6 svg{width:100%;height:auto;display:block}
+#anim-6 .scene{opacity:0;transition:opacity .8s}
+#anim-6 .scene.on{opacity:1}
+#anim-6 .cap{text-align:center;min-height:96px;padding:0 6px}
+#anim-6 .cap.go{animation:k6_rise .7s ease both}
+@keyframes k6_rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#anim-6 .era{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+#anim-6 .cap h2{margin:4px 0 6px;font-size:clamp(22px,4.5vw,32px)}
+#anim-6 .cap p{margin:0 auto;max-width:520px;font-size:15px;line-height:1.5;opacity:.85}
+#anim-6 .tl{position:relative;display:flex;justify-content:space-between;margin:16px 6px 0}
+#anim-6 .tl::before,#anim-6 .bar{content:"";position:absolute;top:9px;left:10%;height:3px;border-radius:2px}
+#anim-6 .tl::before{right:10%;background:#ffffff22}
+#anim-6 .bar{background:var(--accent);transition:width .8s;width:0}
+#anim-6 .dot{all:unset;position:relative;z-index:1;flex:1;text-align:center;cursor:pointer;font-size:12px;opacity:.6}
+#anim-6 .dot i{display:block;width:21px;height:21px;margin:0 auto 6px;border-radius:50%;background:#0b1020;border:3px solid #ffffff44;transition:.4s}
+#anim-6 .dot.on{opacity:1}
+#anim-6 .dot.on i,#anim-6 .dot.done i{border-color:var(--accent);background:var(--accent)}
+#anim-6 .dot:focus-visible i{outline:2px solid #fff;outline-offset:2px}
+#anim-6 .hint{text-align:center;font-size:12px;letter-spacing:.08em;margin-top:12px;opacity:.7;transition:opacity .5s;animation:k6_nudge 1.6s ease-in-out infinite alternate}
+@keyframes k6_nudge{to{transform:translateY(4px)}}
+@media(max-width:560px){#anim-6 .dot{font-size:10px}}
+#anim-6 .spin{animation:k6_spin 12s linear infinite;transform-box:fill-box;transform-origin:center}
+#anim-6 .orb{animation:k6_spin 9s linear infinite;transform-origin:0 0}
+#anim-6 .wt{transform-origin:200px 110px;animation:k6_spin 5s linear infinite}
+@keyframes k6_spin{to{transform:rotate(360deg)}}
+#anim-6 .dash{stroke-dasharray:10 14;animation:k6_dash 1s linear infinite}
+@keyframes k6_dash{to{stroke-dashoffset:-48}}
+#anim-6 .halo{transform-box:fill-box;transform-origin:center;animation:k6_halo 1.6s ease-in-out infinite alternate}
+@keyframes k6_halo{from{opacity:.35;transform:scale(.9)}to{opacity:.9;transform:scale(1.15)}}
+#anim-6 .bolt{animation:k6_bolt 2.2s steps(1) infinite}
+@keyframes k6_bolt{0%,55%,65%,100%{opacity:.4}58%,62%,80%{opacity:1}}
+@media (prefers-reduced-motion:reduce){#anim-6 *{animation:none!important;transition:none!important}}
+#anim-6[data-theme="dark"]{--bg:#070B1A}
+#anim-6{padding:0 14px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<main class="view" id="view-electricity-energy"><div class="s-page" style="--accent:#FF7AC8"><div class="s-glow" style="width:560px;height:560px;left:-160px;top:0;background:rgba(106,92,255,.4)"></div><div class="s-glow" style="width:420px;height:420px;right:-100px;top:240px;background:color-mix(in srgb,var(--accent) 35%,transparent)"></div><div class="s-stars"></div><div class="s-wrap s-top">
+<a href="index.html" class="s-hd s-brand"><span class="s-logo"><span class="s-lp1"></span><span class="s-lp2"></span></span>Augment Education</a>
+<div class="s-navr">
+<a class="s-navlink" href="index.html#home-curriculum">Curriculum</a>
+<a class="s-navlink" href="index.html#home-programs">Programs</a>
+<a class="s-navlink" href="first-principles.html">First Principles</a>
+<a class="s-navlink" href="index.html#home-why">Why it works</a>
+<a class="s-btn s-btn-main" href="https://augedu.com/contact" style="min-height:44px">Get in touch</a>
+</div></div><div class="s-wrap s-hero"><div style="flex:1 1 520px;min-width:0"><div class="s-crumb"><a href="index.html#home-curriculum">All subjects</a> / Intro to Technology · K-8</div><h1 class="s-hd s-h1"><span class="s-grad">Electricity &amp; Energy</span></h1><p class="s-lead">Where power comes from and where it goes</p><div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:14px"><a class="s-btn s-btn-main" href="https://augedu.com/electricityandenergy">Explore the full course</a><a class="s-btn s-btn-ghost" href="#journey-electricity-energy">Scroll the journey</a></div></div><div style="flex:1 1 320px;min-width:0;display:flex;justify-content:center"><div class="s-orb"><div class="s-orbit s-o1"><div class="s-dot" style="width:20px;height:20px;background:#FFB547;left:50%;top:-10px;margin-left:-10px;box-shadow:0 0 22px #FFB547"></div><div class="s-dot" style="width:11px;height:11px;background:#FF7AC8;left:50%;bottom:-5px;margin-left:-5px"></div></div><div class="s-orbit s-o2"><div class="s-dot" style="width:15px;height:15px;background:#9B8CFF;left:-7px;top:50%;margin-top:-7px;box-shadow:0 0 18px #9B8CFF"></div></div><div class="s-orbit s-o3"><div class="s-dot" style="width:13px;height:13px;background:var(--accent);left:50%;top:-6px;margin-left:-6px;box-shadow:0 0 16px var(--accent)"></div></div><div class="s-core"></div></div></div></div><div id="journey-electricity-energy" class="s-wrap s-sec" style="padding-bottom:24px"><div class="s-eye">The journey</div><h2 class="s-hd s-h2">Scroll to travel through Electricity &amp; Energy.</h2></div><div style="position:relative;z-index:1"><div id="anim-6" data-theme="dark"><div class="track" id="a6-track"><div class="stick">
+<div class="card" id="a6-card">
+ <div class="glow"></div>
+ <div class="in">
+  <div class="a-eyebrow">Electricity &amp; Energy</div>
+  <svg viewBox="0 0 600 300" role="img" aria-label="Animated scenes of an atom, a circuit, a generator, wind and solar power, and the power grid">
+   <!-- CHARGE -->
+   <g class="scene on">
+    <circle class="halo" cx="300" cy="150" r="60" fill="#fde047" opacity=".4"/>
+    <g transform="translate(300 150) scale(1 .4)" fill="none" stroke="#fde047" stroke-opacity=".5" stroke-width="3"><g class="orb"><circle r="140"/><circle cx="140" r="12" fill="#fde047" stroke="none"/></g></g>
+    <g transform="translate(300 150) rotate(60) scale(1 .4)" fill="none" stroke="#fde047" stroke-opacity=".5" stroke-width="3"><g class="orb" style="animation-duration:7s"><circle r="140"/><circle cx="140" r="12" fill="#fde047" stroke="none"/></g></g>
+    <g transform="translate(300 150) rotate(120) scale(1 .4)" fill="none" stroke="#fde047" stroke-opacity=".5" stroke-width="3"><g class="orb" style="animation-duration:11s;animation-direction:reverse"><circle r="140"/><circle cx="140" r="12" fill="#fde047" stroke="none"/></g></g>
+    <circle cx="300" cy="150" r="30" fill="#ef4444"/><circle cx="290" cy="144" r="10" fill="#fca5a5"/><circle cx="312" cy="156" r="10" fill="#93c5fd"/><circle cx="305" cy="136" r="9" fill="#fca5a5"/><circle cx="291" cy="162" r="9" fill="#93c5fd"/>
+   </g>
+   <!-- CIRCUIT -->
+   <g class="scene">
+    <path class="dash" d="M150 90H450V240H150Z" fill="none" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <rect x="120" y="135" width="60" height="75" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="3"/>
+    <rect x="138" y="124" width="24" height="12" rx="2" fill="#94a3b8"/>
+    <text x="150" y="182" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" font-weight="700" fill="#fb923c">+</text>
+    <text x="150" y="203" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#94a3b8">−</text>
+    <circle class="halo" cx="450" cy="165" r="62" fill="#fde047" opacity=".4"/>
+    <circle cx="450" cy="165" r="32" fill="#fef08a" stroke="#fde047" stroke-width="4"/>
+    <path d="M438 180V168L444 156L450 168L456 156L462 168V180" fill="none" stroke="#f59e0b" stroke-width="3"/>
+   </g>
+   <!-- GENERATOR -->
+   <g class="scene">
+    <circle cx="230" cy="150" r="82" fill="none" stroke="#d97706" stroke-width="12" stroke-dasharray="5 5"/>
+    <g class="spin" style="animation-duration:3s"><rect x="190" y="138" width="40" height="24" fill="#ef4444"/><rect x="230" y="138" width="40" height="24" fill="#3b82f6"/></g>
+    <path class="dash" d="M312 150H440" fill="none" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <circle class="halo" cx="478" cy="150" r="56" fill="#fde047" opacity=".4"/>
+    <circle cx="478" cy="150" r="30" fill="#fef08a" stroke="#fde047" stroke-width="4"/>
+   </g>
+   <!-- RENEWABLES -->
+   <g class="scene">
+    <circle cx="500" cy="70" r="26" fill="#fde047"/><circle class="spin" style="animation-duration:20s" cx="500" cy="70" r="40" fill="none" stroke="#fde047" stroke-width="4" stroke-dasharray="6 10"/>
+    <rect x="0" y="262" width="600" height="38" fill="#14532d"/>
+    <polygon points="196,118 204,118 208,262 192,262" fill="#e2e8f0"/>
+    <g class="wt" fill="#f1f5f9"><path d="M200 110L193 36Q200 30 207 36Z"/><path d="M200 110L193 36Q200 30 207 36Z" transform="rotate(120 200 110)"/><path d="M200 110L193 36Q200 30 207 36Z" transform="rotate(240 200 110)"/></g>
+    <circle cx="200" cy="110" r="7" fill="#94a3b8"/>
+    <path d="M400 232V262" stroke="#94a3b8" stroke-width="6"/>
+    <polygon points="350,230 450,230 472,184 372,184" fill="#1e3a8a" stroke="#93c5fd" stroke-width="3"/>
+    <path d="M383 230L405 184M417 230L439 184M361 207H461" stroke="#93c5fd" stroke-width="2"/>
+    <polygon class="halo" points="380,214 394,214 400,200 386,200" fill="#fff" opacity=".6"/>
+   </g>
+   <!-- GRID -->
+   <g class="scene">
+    <rect x="0" y="262" width="600" height="38" fill="#1e293b"/>
+    <rect x="10" y="190" width="60" height="72" rx="4" fill="#475569"/>
+    <polygon class="bolt" points="44,200 24,236 38,236 30,256 56,222 42,222 52,200" fill="#fde047"/>
+    <g fill="none" stroke="#94a3b8" stroke-width="4"><path d="M200 100L178 262M200 100L222 262M184 190H216M190 145H210M168 108H232"/><path d="M400 100L378 262M400 100L422 262M384 190H416M390 145H410M368 108H432"/></g>
+    <path class="dash" d="M40 190V104Q110 128 168 108M232 108Q300 132 368 108M432 108Q490 118 520 196" fill="none" stroke="#fde047" stroke-width="4" stroke-linecap="round"/>
+    <rect x="470" y="206" width="56" height="56" fill="#64748b"/><polygon points="462,206 498,176 534,206" fill="#334155"/>
+    <rect class="halo" x="482" y="222" width="14" height="14" fill="#fde047"/><rect class="halo" x="504" y="222" width="14" height="14" fill="#fde047" style="animation-delay:.5s"/>
+    <rect x="540" y="222" width="46" height="40" fill="#64748b"/><polygon points="534,222 563,198 592,222" fill="#334155"/>
+    <rect class="halo" x="556" y="236" width="14" height="14" fill="#fde047" style="animation-delay:.9s"/>
+   </g>
+  </svg>
+  <div class="cap go" id="a6-cap" aria-live="polite"><div class="era" id="a6-era"></div><h2 id="a6-ttl"></h2><p id="a6-dsc"></p></div>
+  <div class="tl" id="a6-tl"><div class="bar" id="a6-bar"></div></div>
+  <div class="hint" id="a6-hint">Scroll to explore ↓</div>
+ </div>
+</div>
+</div></div></div></div><div class="s-wrap s-sec"><div class="s-eye" style="color:var(--accent)">What students explore</div><h2 class="s-hd s-h2">Where power comes from and where it goes</h2><div class="s-two"><div><p class="s-p">Students follow electricity from tiny moving charges to the power grid. They build mental models of circuits, ask how electricity is made, and weigh the promise of renewable power.</p></div><div class="s-chips"><span class="s-chip">Tiny charges in motion</span><span class="s-chip">Circuits</span><span class="s-chip">Making electricity</span><span class="s-chip">Renewable power</span><span class="s-chip">The power grid</span></div></div></div><div class="s-wrap s-sec"><div class="s-eye">How every session runs</div><h2 class="s-hd s-h2">Easy to lead. Built to grow.</h2><div class="s-grid4">
+<div class="s-card s-mini"><div class="s-hd s-num">10+</div><p>driving questions start every subject area</p></div>
+<div class="s-card s-mini"><div class="s-hd s-num">1</div><p>shared anchor opens 10+ further inquiries per session</p></div>
+<div class="s-card s-mini"><div class="s-hd s-num">I · We · You</div><p>Do protocol, with First Principles cheat sheets</p></div>
+<div class="s-card s-mini"><div class="s-hd s-num">0</div><p>prior technology experience needed to teach it</p></div></div></div><div class="s-wrap s-sec" style="padding-bottom:72px"><div class="s-cta"><h2 class="s-hd" style="margin:0;font-size:52px;line-height:1.05">Ready to explore Electricity &amp; Energy?</h2><p class="s-p" style="margin:16px auto 0;max-width:560px;color:#EDE9FF">Get the course, or ask us how it fits your classroom, school or family.</p><div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center"><a class="s-btn" style="background:#fff;color:#1B1F5E" href="https://augedu.com/electricityandenergy">Explore the full course</a><a class="s-btn s-btn-ghost" href="https://augedu.com/contact">Contact us</a></div></div></div><div class="s-wrap" style="padding-bottom:56px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between"><a class="s-pn" href="space-robots-machines.html"><span class="s-pl">Previous</span><span class="s-hd">Space, Robots &amp; Machines</span></a><a class="s-pn" style="text-align:right" href="digital-art-design.html"><span class="s-pl">Next</span><span class="s-hd">Digital Art &amp; Design</span></a></div><div class="s-foot"><div class="s-wrap s-footin">
+<div>Augment Education, LLC. Philadelphia, PA</div>
+<div class="s-flinks"><a class="s-navlink" href="https://augedu.com/curriculum">Curriculum</a><a class="s-navlink" href="https://augedu.com/contact">Get in touch</a><a class="s-navlink" href="https://augedu.com/privacy-policy">Privacy policy</a><a class="s-navlink" href="https://augedu.com/terms-and-conditions">Terms and conditions</a></div>
+</div></div></div></main>
+<script>
+(function(){var R=document.getElementById("anim-6");
+var S=[
+{n:"Charge",era:"Electricity",t:"Tiny charges in motion",d:"Everything is made of atoms. When electrons move from atom to atom, we get electricity.",c:"#fde047"},
+{n:"Circuit",era:"Electricity",t:"Circuits",d:"A battery pushes charge around a closed loop. Break the loop and the light goes out.",c:"#fb923c"},
+{n:"Generator",era:"Energy",t:"Making electricity",d:"Spin a magnet inside a coil of wire and motion becomes electric current.",c:"#38bdf8"},
+{n:"Renewables",era:"Energy",t:"Renewable power",d:"Wind and sunlight are energy sources that don’t run out. Turbines and solar panels turn them into electricity.",c:"#4ade80"},
+{n:"Grid",era:"Energy",t:"The power grid",d:"High-voltage lines carry electricity from where it’s made to homes, schools and businesses.",c:"#a78bfa"}];
+var sc=R.querySelectorAll(".scene"),card=document.getElementById("a6-card"),tl=document.getElementById("a6-tl"),bar=document.getElementById("a6-bar"),cap=document.getElementById("a6-cap");
+var i=-1,dots=[],track=document.getElementById("a6-track");
+S.forEach(function(s,k){var b=document.createElement("button");b.className="dot";b.innerHTML="<i></i>"+s.n;b.onclick=function(){scrollToStage(k)};tl.appendChild(b);dots.push(b)});
+function go(n){
+ if(n===i)return;i=n;var s=S[i];document.getElementById("a6-hint").style.opacity=i?0:.7;
+ sc.forEach(function(e,k){e.classList.toggle("on",k===i)});
+ dots.forEach(function(d,k){d.classList.toggle("on",k===i);d.classList.toggle("done",k<i)});
+ card.style.setProperty("--accent",s.c);
+ bar.style.width=(80*i/(S.length-1))+"%";
+ document.getElementById("a6-era").textContent=s.era;
+ document.getElementById("a6-ttl").textContent=s.t;
+ document.getElementById("a6-dsc").textContent=s.d;
+ cap.classList.remove("go");void cap.offsetWidth;cap.classList.add("go");
+}
+function span(){return Math.max(1,track.offsetHeight-innerHeight)}
+function onScroll(){var p=-track.getBoundingClientRect().top/span();p=Math.min(.9999,Math.max(0,p));go(Math.floor(p*S.length))}
+function scrollToStage(k){scrollTo({top:track.getBoundingClientRect().top+scrollY+(k+.5)/S.length*span(),behavior:"smooth"})}
+track.style.height=(S.length*70+100)+"vh";
+addEventListener("scroll",onScroll,{passive:true});addEventListener("resize",onScroll);
+go(0);onScroll();
+})();
+</script>
+</body>
+</html>
